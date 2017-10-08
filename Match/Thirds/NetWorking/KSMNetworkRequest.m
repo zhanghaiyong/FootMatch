@@ -38,13 +38,11 @@
             successHandler(responseObject);
         }else if ([responseObject isKindOfClass:[NSString class]]){
             
-            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
+//            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
             
             return ;
         }else{
-            
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
-            
             successHandler(dic);
         }
         
@@ -52,7 +50,7 @@
         
         KSMLog(@"------请求失败-------%@",error);
         
-        [ZHProgressHUD showInfoWithText:@"请求失败"];
+//        [ZHProgressHUD showInfoWithText:@"请求失败"];
         
         failureHandler(error);
     }];
@@ -68,7 +66,7 @@
         return;
     }
     
-    url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     AFHTTPSessionManager *manager = [ShareManagerCtrl shareManager];
     [manager.requestSerializer setTimeoutInterval:15];
@@ -86,7 +84,7 @@
             successHandler(responseObject);
             
         }else if ([responseObject isKindOfClass:[NSString class]]){
-            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
+//            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
             return ;
         }else{
             
@@ -97,7 +95,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         KSMLog(@"------请求失败-------%@",error);
-        [ZHProgressHUD showInfoWithText:@"请求失败"];
+//        [ZHProgressHUD showInfoWithText:@"请求失败"];
         failureHandler(error);
     }];
 }

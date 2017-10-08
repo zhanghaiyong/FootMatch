@@ -14,19 +14,30 @@
 
 @implementation AppDelegate
 
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
+    // Internal error reporting
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     
-//    [[UINavigationBar appearance] setBarTintColor:MainColor];
+    [[UINavigationBar appearance] setBarTintColor:MainColor];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,[UIFont systemFontOfSize:18], NSFontAttributeName, nil]];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
     
-    [[UINavigationBar appearance] setTintColor:[UIColor lightTextColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     UIStoryboard *SB = [UIStoryboard storyboardWithName:@"TabBar" bundle:nil];
     TabBarCtrl *tabbar = [SB instantiateViewControllerWithIdentifier:@"TabBarCtrl"];
     self.window.rootViewController = tabbar;
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

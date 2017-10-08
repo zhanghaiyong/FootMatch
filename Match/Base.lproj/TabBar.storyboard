@@ -60,7 +60,7 @@
                         <segue destination="9Vh-HS-naG" kind="relationship" relationship="viewControllers" id="Z36-Qp-D8Q"/>
                         <segue destination="JAa-DM-fzd" kind="relationship" relationship="viewControllers" id="MRw-ZG-TIN"/>
                         <segue destination="23t-bG-O1R" kind="relationship" relationship="viewControllers" id="Ddt-yN-3Nf"/>
-                        <segue destination="r3L-uW-DAr" kind="relationship" relationship="viewControllers" id="zlQ-5H-2Rx"/>
+                        <segue destination="kZK-jN-hHT" kind="relationship" relationship="viewControllers" id="zlQ-5H-2Rx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ub5-61-Sgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,17 +99,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="个人" image="iconfont-wode" id="9Xp-c2-HRM"/>
+                    <navigationItem key="navigationItem" id="Z5W-Lz-l45"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhM-Qm-275" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="940"/>
+            <point key="canvasLocation" x="1342" y="917"/>
         </scene>
         <!--圈子-->
         <scene sceneID="g6o-Jf-zxJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="23t-bG-O1R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="圈子" image="iconfont-sousuo" id="edu-99-AAY"/>
+                    <tabBarItem key="tabBarItem" title="圈子" image="tabFocusHL" id="edu-99-AAY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cto-OW-zOb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -128,7 +128,7 @@
         <scene sceneID="pDJ-8s-cgV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Vh-HS-naG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="iconfont-home" id="jaV-h3-ofs"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="tabHomeHL" id="jaV-h3-ofs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iah-ou-tjh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -147,7 +147,7 @@
         <scene sceneID="VQs-G0-nWw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAa-DM-fzd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="比赛" image="allProduct" id="tS4-Gw-eRB"/>
+                    <tabBarItem key="tabBarItem" title="比赛" image="tabLivingHL" id="tS4-Gw-eRB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Kx-GA-eqa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -162,11 +162,30 @@
             </objects>
             <point key="canvasLocation" x="502" y="-528"/>
         </scene>
+        <!--个人-->
+        <scene sceneID="K14-RW-VRq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kZK-jN-hHT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人" image="tabMineHL" id="9Xp-c2-HRM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OJB-En-97M">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r3L-uW-DAr" kind="relationship" relationship="rootViewController" id="TXy-m2-Bny"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQ9-2N-IzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="917"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="allProduct" width="20" height="20"/>
-        <image name="iconfont-home" width="25" height="25"/>
-        <image name="iconfont-sousuo" width="25" height="25"/>
-        <image name="iconfont-wode" width="25" height="25"/>
+        <image name="tabFocusHL" width="24" height="24"/>
+        <image name="tabHomeHL" width="24" height="24"/>
+        <image name="tabLivingHL" width="24" height="24"/>
+        <image name="tabMineHL" width="24" height="24"/>
     </resources>
 </document>

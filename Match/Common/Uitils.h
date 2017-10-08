@@ -11,6 +11,8 @@
 
 @interface Uitils : NSObject
 
++ (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
+
 +(BOOL)isNetWorkReach;
 
 + (void)shake:(UITextField *)label;
