@@ -68,6 +68,10 @@
     [SVProgressHUD dismiss];
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [SVProgressHUD dismiss];
+}
+
 #pragma mark - JXSegmentDelegate
 - (void)JXSegment:(JXSegment*)segment didSelectIndex:(NSInteger)index{
     [pageView changeToItemAtIndex:index];

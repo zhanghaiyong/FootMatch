@@ -26,6 +26,18 @@
     [super viewDidLoad];
     self.title = @"热门";
     
+//    AVObject *todoFolder = [AVObject objectWithClassName:@"oneClass"];
+    //    [todoFolder setObject:@"http://www.baidu.com" forKey:@"url"];// 设置名称
+//    [todoFolder setObject:@"YES" forKey:@"show"];// 设置优先级
+//    [todoFolder saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+//        if (!error) {
+//            NSLog(@"保存成功");
+//        }else {
+//            
+//            NSLog(@"失败%@",error);
+//        }
+//    }];// 保存到云端
+    
     tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
     tableView.tableFooterView = [UIView new];
     tableView.delegate = self;

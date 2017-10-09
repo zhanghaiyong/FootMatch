@@ -61,8 +61,13 @@
     [SVProgressHUD dismiss];
     return YES;
 }
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     sharebtn.selected = YES;
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [SVProgressHUD dismiss];
 }
 
 @end

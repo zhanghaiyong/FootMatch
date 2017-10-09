@@ -30,6 +30,8 @@
 		99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9541F7F79CD00D1A781 /* CircelViewController.m */; };
 		99E9D9581F7F79DB00D1A781 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9571F7F79DB00D1A781 /* PersonViewController.m */; };
 		99E9D9591F7F7AE200D1A781 /* SegmentTitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9431F7F75B600D1A781 /* SegmentTitView.m */; };
+		BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C3CF21F8BA9D800DC999D /* LoadingViewController.m */; };
+		BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */; };
 		BF81D0051F7FA5530078C5ED /* HotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF81D0041F7FA5530078C5ED /* HotModel.m */; };
 		BF81D0091F7FA5EE0078C5ED /* NormalHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF81D0071F7FA5EE0078C5ED /* NormalHotCell.m */; };
 		BF81D00A1F7FA5EE0078C5ED /* NormalHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF81D0081F7FA5EE0078C5ED /* NormalHotCell.xib */; };
@@ -96,6 +98,11 @@
 		99E9D9541F7F79CD00D1A781 /* CircelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelViewController.m; sourceTree = "<group>"; };
 		99E9D9561F7F79DB00D1A781 /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		99E9D9571F7F79DB00D1A781 /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		BF7C3CF11F8BA9D800DC999D /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		BF7C3CF21F8BA9D800DC999D /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		BF7C3CF41F8BAAD400DC999D /* AppDelegate+UPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UPush.h"; sourceTree = "<group>"; };
+		BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UPush.m"; sourceTree = "<group>"; };
+		BF7C3CF71F8BC47000DC999D /* Match.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Match.entitlements; sourceTree = "<group>"; };
 		BF81D0031F7FA5530078C5ED /* HotModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotModel.h; sourceTree = "<group>"; };
 		BF81D0041F7FA5530078C5ED /* HotModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotModel.m; sourceTree = "<group>"; };
 		BF81D0061F7FA5EE0078C5ED /* NormalHotCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalHotCell.h; sourceTree = "<group>"; };
@@ -220,10 +227,14 @@
 		99E9D8E51F7F747500D1A781 /* Match */ = {
 			isa = PBXGroup;
 			children = (
+				BF7C3CF71F8BC47000DC999D /* Match.entitlements */,
 				99E9D8E61F7F747500D1A781 /* AppDelegate.h */,
 				99E9D8E71F7F747500D1A781 /* AppDelegate.m */,
+				BF7C3CF41F8BAAD400DC999D /* AppDelegate+UPush.h */,
+				BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */,
 				99E9D9451F7F75C800D1A781 /* TabBarCtrl.h */,
 				99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */,
+				BF7C3CF01F8BA9C900DC999D /* LoadingViewCtrl */,
 				99E9D9051F7F74F300D1A781 /* Home */,
 				99E9D8FC1F7F74F300D1A781 /* BS */,
 				99E9D9011F7F74F300D1A781 /* Circel */,
@@ -380,6 +391,15 @@
 			path = NetWorking;
 			sourceTree = "<group>";
 		};
+		BF7C3CF01F8BA9C900DC999D /* LoadingViewCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				BF7C3CF11F8BA9D800DC999D /* LoadingViewController.h */,
+				BF7C3CF21F8BA9D800DC999D /* LoadingViewController.m */,
+			);
+			path = LoadingViewCtrl;
+			sourceTree = "<group>";
+		};
 		BF81D0021F7FA5390078C5ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +446,11 @@
 					99E9D8E21F7F747500D1A781 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -507,7 +532,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -517,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */,
 				99B71F8D1F8B608200C33D8C /* JXPageView.m in Sources */,
 				99B71F8E1F8B608200C33D8C /* JXSegment.m in Sources */,
 				99B71F8F1F8B608200C33D8C /* UIView+JXView.m in Sources */,
@@ -528,6 +554,7 @@
 				BF81D00E1F7FA8EB0078C5ED /* VideoHotCell.m in Sources */,
 				BF81D02A1F7FE5A30078C5ED /* HotDetailCommentCell.m in Sources */,
 				99E9D9391F7F757100D1A781 /* CALayer+TextFieldBoardColor.m in Sources */,
+				BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */,
 				BF81D0231F7FDF2D0078C5ED /* HotDetailViewController.m in Sources */,
 				99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */,
 				99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */,
@@ -598,9 +625,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xianliang Shi (8GAMU7YWL2)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4XH337X4G3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -620,6 +649,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "ba9fb4ac-4dbc-4d99-b1b8-2992d19c2d72";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -653,9 +683,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xianliang Shi (4XH337X4G3)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4XH337X4G3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -668,6 +700,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b65dccf5-a14a-4c7b-8623-73818e61377e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -678,14 +711,20 @@
 			baseConfigurationReference = 7776D0455FBCD8527D5A21F1 /* Pods-Match.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Match/Match.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X37H2A9PP3;
-				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/FootMatch/FootMatch/Match/FootMatch.pch;
+				DEVELOPMENT_TEAM = 4XH337X4G3;
+				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/match/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaiyong;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjsports.zhy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -695,14 +734,20 @@
 			baseConfigurationReference = 3AAE61D65A0B819A61450E7B /* Pods-Match.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Match/Match.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X37H2A9PP3;
-				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/FootMatch/FootMatch/Match/FootMatch.pch;
+				DEVELOPMENT_TEAM = 4XH337X4G3;
+				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/match/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaiyong;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mjsports.zhy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

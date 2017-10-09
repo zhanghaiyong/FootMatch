@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "TabBarCtrl.h"
+#import "LoadingViewController.h"
+#import "AppDelegate+UPush.h"
 @interface AppDelegate ()
 
 @end
@@ -25,16 +26,23 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     
+    //leanCloud
+    [AVOSCloud setApplicationId:@"WM10Al07f4FtfQEW2mYIl7lv-gzGzoHsz" clientKey:@"JSGQobGfzv2pkeQAGGPxzSI0"];
+    //跟踪统计应用的打开情况
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //JPush
+    [self setUMessageApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
     [[UINavigationBar appearance] setBarTintColor:MainColor];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor whiteColor], NSForegroundColorAttributeName,[UIFont systemFontOfSize:18], NSFontAttributeName, nil]];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    
-    UIStoryboard *SB = [UIStoryboard storyboardWithName:@"TabBar" bundle:nil];
-    TabBarCtrl *tabbar = [SB instantiateViewControllerWithIdentifier:@"TabBarCtrl"];
-    self.window.rootViewController = tabbar;
+
+    LoadingViewController *loadVC = [LoadingViewController new];
+    self.window.rootViewController = loadVC;
     
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
