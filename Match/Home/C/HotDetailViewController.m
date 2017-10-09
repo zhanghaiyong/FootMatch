@@ -15,6 +15,7 @@
     UITableView *tableView;
     NSDictionary *htmlDict;
     NSMutableArray *commentArr;
+    UIButton *sharebtn;
 }
 @property (nonatomic,strong)UIWebView *webView;
 
@@ -24,7 +25,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"热门详情";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    sharebtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    [sharebtn sizeToFit];
+    [sharebtn addTarget:self action:@selector(shareNews) forControlEvents:UIControlEventTouchUpInside];
+    [sharebtn setImage:[UIImage imageNamed:@"addShare"] forState:UIControlStateNormal];
+    [sharebtn setImage:[UIImage imageNamed:@"addShare"] forState:UIControlStateSelected];
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithCustomView:sharebtn];
+    self.navigationItem.rightBarButtonItem = shareItem;
     
     webViewH = 200;
     tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight)];
@@ -45,6 +55,14 @@
     [tableView.mj_header beginRefreshing];
 }
 
+- (void)shareNews {
+ 
+    if (sharebtn.selected) {
+        UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:@[self.newsTitle, htmlDict[@"content"]] applicationActivities:nil];
+        [self presentViewController:activity animated:YES completion:nil];
+    }
+}
+
 - (void)refreshData {
     
     [KSMNetworkRequest getRequest:[NSString stringWithFormat:@"%@&nid=%@",kHotDetail,self.newsId] params:nil success:^(id responseObj) {
@@ -52,7 +70,6 @@
             htmlDict = [NSDictionary dictionaryWithDictionary:responseObj[@"data"]];
             
             [self.webView loadHTMLString:responseObj[@"data"][@"content"] baseURL:nil];
-            
         }
     } failure:^(NSError *error) {
         [tableView.mj_header endRefreshing];
@@ -74,13 +91,14 @@
 #pragma mark UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)wb
 {
+    
+    sharebtn.selected = YES;
     NSString *height_str = [wb stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight"];
     //document.body.offsetHeight获取页面高度信息
     int temp = (int)height_str.integerValue - 44;
     _webView.frame = CGRectMake(0, 0, kDeviceWidth, temp);
     _webView.scrollView.scrollEnabled = NO;  //禁止滚动
     [tableView reloadData];
-
 }
 
 #pragma mark UITableViewDelegate

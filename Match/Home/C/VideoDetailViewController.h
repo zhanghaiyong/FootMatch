@@ -11,4 +11,5 @@
 @interface VideoDetailViewController : UIViewController
 @property (nonatomic,strong)NSString *newsId;
 @property (nonatomic,strong)NSString *playUrl;
+@property (nonatomic,strong)NSString *videoTitle;
 @end

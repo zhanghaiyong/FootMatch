@@ -37,9 +37,7 @@
         }else if ([responseObject isKindOfClass:[NSArray class]]){
             successHandler(responseObject);
         }else if ([responseObject isKindOfClass:[NSString class]]){
-            
-//            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
-            
+            [SVProgressHUD showErrorWithStatus:@"返回数据有误"];
             return ;
         }else{
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
@@ -50,7 +48,7 @@
         
         KSMLog(@"------请求失败-------%@",error);
         
-//        [ZHProgressHUD showInfoWithText:@"请求失败"];
+        [SVProgressHUD showErrorWithStatus:@"请求失败"];
         
         failureHandler(error);
     }];
@@ -84,7 +82,7 @@
             successHandler(responseObject);
             
         }else if ([responseObject isKindOfClass:[NSString class]]){
-//            [ZHProgressHUD showInfoWithText:@"返回数据有误"];
+            [SVProgressHUD showErrorWithStatus:@"返回数据有误"];
             return ;
         }else{
             
@@ -95,7 +93,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         KSMLog(@"------请求失败-------%@",error);
-//        [ZHProgressHUD showInfoWithText:@"请求失败"];
+        [SVProgressHUD showErrorWithStatus:@"请求失败"];
         failureHandler(error);
     }];
 }

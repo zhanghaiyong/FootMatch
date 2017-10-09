@@ -10,4 +10,5 @@
 
 @interface HotDetailViewController : UIViewController
 @property (nonatomic,strong)NSString *newsId;
+@property (nonatomic,strong)NSString *newsTitle;
 @end

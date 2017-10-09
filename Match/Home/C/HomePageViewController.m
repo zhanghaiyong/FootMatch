@@ -26,8 +26,7 @@
     [super viewDidLoad];
     self.title = @"热门";
     
-
-    tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight)];
+    tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
     tableView.tableFooterView = [UIView new];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -111,7 +110,7 @@
             cell = [[[NSBundle mainBundle] loadNibNamed:@"VideoHotCell" owner:self options:nil] lastObject];
         }
         
-        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"yuba_note_user_default_icon"]];
+        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"上方大图"]];
         cell.title.text = model.title;
         cell.time.text = [Uitils timeWithTimeIntervalString:model.pubTime];
         [cell.check setTitle:[NSString stringWithFormat:@"☞ %@",model.read] forState:UIControlStateNormal];
@@ -147,14 +146,18 @@
     
         VideoDetailViewController *videoDetailVC = [[VideoDetailViewController alloc]init];
         videoDetailVC.playUrl = model.url;
+        videoDetailVC.title = @"热门详情";
         videoDetailVC.newsId = model.newsId;
+        videoDetailVC.videoTitle = model.title;
         videoDetailVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:videoDetailVC animated:YES];
         
     }else {
     
         HotDetailViewController *hotDetailVC = [[HotDetailViewController alloc]init];
+        hotDetailVC.title = @"热门详情";
         hotDetailVC.newsId = model.newsId;
+        hotDetailVC.newsTitle = model.title;
         hotDetailVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:hotDetailVC animated:YES];
     }

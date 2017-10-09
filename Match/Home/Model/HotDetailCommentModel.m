@@ -14,7 +14,7 @@
     
     CGFloat H = 60;
     
-    CGRect frame = [self.content boundingRectWithSize:CGSizeMake(kDeviceWidth-70, MAXFLOAT) options:NSStringDrawingUsesDeviceMetrics | NSStringDrawingUsesFontLeading attributes:@{NSForegroundColorAttributeName:[UIFont systemFontOfSize:15]} context:nil];
+    CGRect frame = [self.content boundingRectWithSize:CGSizeMake(kDeviceWidth-70, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSForegroundColorAttributeName:[UIFont systemFontOfSize:15]} context:nil];
     H += frame.size.height+10;
  
     if (H < 60) {

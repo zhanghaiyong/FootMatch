@@ -11,6 +11,7 @@
 
 @interface Uitils : NSObject
 
+
 + (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
 
 +(BOOL)isNetWorkReach;
