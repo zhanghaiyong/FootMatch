@@ -20,10 +20,20 @@
 @end
 
 @implementation PersonViewController
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    AccountModel *model = [AccountModel account];
+    //有帐号
+    if (model) {
+        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
+        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"竞彩";
+    [self setRightBarButtonItem];
     tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
     tableView.tableFooterView = [UIView new];
     tableView.delegate = self;

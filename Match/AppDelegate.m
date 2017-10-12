@@ -26,10 +26,18 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     
+    
     //leanCloud
     [AVOSCloud setApplicationId:@"WM10Al07f4FtfQEW2mYIl7lv-gzGzoHsz" clientKey:@"JSGQobGfzv2pkeQAGGPxzSI0"];
     //跟踪统计应用的打开情况
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = NO;
+    manager.enableAutoToolbar = NO;
     
     //JPush
     [self setUMessageApplication:application didFinishLaunchingWithOptions:launchOptions];

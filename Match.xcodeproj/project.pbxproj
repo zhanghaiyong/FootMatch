@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		04653616874D5AD03FC59A80 /* libPods-Match.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C909BF689251B6729A0D334 /* libPods-Match.a */; };
+		990090791F8F48DD00607A49 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990090781F8F48DD00607A49 /* Login.storyboard */; };
+		9900907C1F8F516600607A49 /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900907B1F8F516600607A49 /* LoginTableViewController.m */; };
+		9900907F1F8F517300607A49 /* RegisterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9900907E1F8F517300607A49 /* RegisterTableViewController.m */; };
+		990090821F8F517E00607A49 /* FindPwdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090811F8F517E00607A49 /* FindPwdTableViewController.m */; };
+		990090851F8F5AE400607A49 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090841F8F5AE400607A49 /* BaseViewController.m */; };
+		990090881F8F683A00607A49 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090861F8F683800607A49 /* AccountModel.m */; };
 		99B71F6A1F8B1D8B00C33D8C /* MatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F691F8B1D8B00C33D8C /* MatchModel.m */; };
 		99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F7B1F8B4F4D00C33D8C /* MatchCell.m */; };
 		99B71F7E1F8B4F4D00C33D8C /* MatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B71F7C1F8B4F4D00C33D8C /* MatchCell.xib */; };
@@ -50,6 +56,17 @@
 		3AAE61D65A0B819A61450E7B /* Pods-Match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match.release.xcconfig"; path = "Pods/Target Support Files/Pods-Match/Pods-Match.release.xcconfig"; sourceTree = "<group>"; };
 		3C909BF689251B6729A0D334 /* libPods-Match.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Match.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7776D0455FBCD8527D5A21F1 /* Pods-Match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Match/Pods-Match.debug.xcconfig"; sourceTree = "<group>"; };
+		990090781F8F48DD00607A49 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9900907A1F8F516600607A49 /* LoginTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTableViewController.h; sourceTree = "<group>"; };
+		9900907B1F8F516600607A49 /* LoginTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
+		9900907D1F8F517300607A49 /* RegisterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterTableViewController.h; sourceTree = "<group>"; };
+		9900907E1F8F517300607A49 /* RegisterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterTableViewController.m; sourceTree = "<group>"; };
+		990090801F8F517E00607A49 /* FindPwdTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPwdTableViewController.h; sourceTree = "<group>"; };
+		990090811F8F517E00607A49 /* FindPwdTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPwdTableViewController.m; sourceTree = "<group>"; };
+		990090831F8F5AE400607A49 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		990090841F8F5AE400607A49 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		990090861F8F683800607A49 /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		990090871F8F683900607A49 /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
 		99B71F681F8B1D8B00C33D8C /* MatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchModel.h; sourceTree = "<group>"; };
 		99B71F691F8B1D8B00C33D8C /* MatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchModel.m; sourceTree = "<group>"; };
 		99B71F7A1F8B4F4D00C33D8C /* MatchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchCell.h; sourceTree = "<group>"; };
@@ -157,6 +174,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		990090771F8F46A400607A49 /* LoginCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				990090781F8F48DD00607A49 /* Login.storyboard */,
+				9900907A1F8F516600607A49 /* LoginTableViewController.h */,
+				9900907B1F8F516600607A49 /* LoginTableViewController.m */,
+				9900907D1F8F517300607A49 /* RegisterTableViewController.h */,
+				9900907E1F8F517300607A49 /* RegisterTableViewController.m */,
+				990090801F8F517E00607A49 /* FindPwdTableViewController.h */,
+				990090811F8F517E00607A49 /* FindPwdTableViewController.m */,
+			);
+			path = LoginCtrl;
+			sourceTree = "<group>";
+		};
 		99B71F661F8B1C8000C33D8C /* V */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +265,11 @@
 				BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */,
 				99E9D9451F7F75C800D1A781 /* TabBarCtrl.h */,
 				99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */,
+				990090831F8F5AE400607A49 /* BaseViewController.h */,
+				990090841F8F5AE400607A49 /* BaseViewController.m */,
+				990090871F8F683900607A49 /* AccountModel.h */,
+				990090861F8F683800607A49 /* AccountModel.m */,
+				990090771F8F46A400607A49 /* LoginCtrl */,
 				BF7C3CF01F8BA9C900DC999D /* LoadingViewCtrl */,
 				99E9D9051F7F74F300D1A781 /* Home */,
 				99E9D8FC1F7F74F300D1A781 /* BS */,
@@ -477,6 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990090791F8F48DD00607A49 /* Login.storyboard in Resources */,
 				99E9D8F31F7F747500D1A781 /* LaunchScreen.storyboard in Resources */,
 				BF81D00F1F7FA8EB0078C5ED /* VideoHotCell.xib in Resources */,
 				99E9D94C1F7F777200D1A781 /* TabBar.storyboard in Resources */,
@@ -532,7 +569,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -543,20 +580,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */,
+				9900907C1F8F516600607A49 /* LoginTableViewController.m in Sources */,
 				99B71F8D1F8B608200C33D8C /* JXPageView.m in Sources */,
 				99B71F8E1F8B608200C33D8C /* JXSegment.m in Sources */,
 				99B71F8F1F8B608200C33D8C /* UIView+JXView.m in Sources */,
 				BF81D0101F7FD4A00078C5ED /* KSMNetworkRequest.m in Sources */,
 				BF81D0111F7FD4A00078C5ED /* ShareManagerCtrl.m in Sources */,
 				99E9D9591F7F7AE200D1A781 /* SegmentTitView.m in Sources */,
+				9900907F1F8F517300607A49 /* RegisterTableViewController.m in Sources */,
 				99E9D9581F7F79DB00D1A781 /* PersonViewController.m in Sources */,
+				990090821F8F517E00607A49 /* FindPwdTableViewController.m in Sources */,
 				99E9D94F1F7F782E00D1A781 /* HomePageViewController.m in Sources */,
 				BF81D00E1F7FA8EB0078C5ED /* VideoHotCell.m in Sources */,
+				990090851F8F5AE400607A49 /* BaseViewController.m in Sources */,
 				BF81D02A1F7FE5A30078C5ED /* HotDetailCommentCell.m in Sources */,
 				99E9D9391F7F757100D1A781 /* CALayer+TextFieldBoardColor.m in Sources */,
 				BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */,
 				BF81D0231F7FDF2D0078C5ED /* HotDetailViewController.m in Sources */,
 				99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */,
+				990090881F8F683A00607A49 /* AccountModel.m in Sources */,
 				99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */,
 				99E9D9471F7F75C900D1A781 /* TabBarCtrl.m in Sources */,
 				BF81D0261F7FE3210078C5ED /* HotDetailCommentModel.m in Sources */,
@@ -716,12 +758,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/match/FootMatch/Match/FootMatch.pch;
+				DEVELOPMENT_TEAM = AKEZGLTY8R;
+				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mjsports.zhy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sosoyy.m.api;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -739,12 +781,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/match/FootMatch/Match/FootMatch.pch;
+				DEVELOPMENT_TEAM = AKEZGLTY8R;
+				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mjsports.zhy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sosoyy.m.api;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

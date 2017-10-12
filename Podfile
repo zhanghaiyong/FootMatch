@@ -12,4 +12,5 @@ pod 'AVOSCloud'
 pod 'JPush'
 pod 'SDCycleScrollView'
 pod 'SVProgressHUD', '~> 2.2.1'
+pod 'SMSSDK'
 end

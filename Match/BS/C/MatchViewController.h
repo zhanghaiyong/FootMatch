@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MatchViewController : UIViewController
+@interface MatchViewController : BaseViewController
 
 @end

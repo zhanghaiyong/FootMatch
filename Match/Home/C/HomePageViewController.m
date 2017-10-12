@@ -22,9 +22,22 @@
 
 @implementation HomePageViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    AccountModel *model = [AccountModel account];
+    //有帐号
+    if (model) {
+        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
+        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"热门";
+    
+    [self setRightBarButtonItem];
     
 //    AVObject *todoFolder = [AVObject objectWithClassName:@"oneClass"];
     //    [todoFolder setObject:@"http://www.baidu.com" forKey:@"url"];// 设置名称

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CircelViewController : UIViewController
+@interface CircelViewController : BaseViewController
 
 @end

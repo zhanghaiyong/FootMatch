@@ -26,11 +26,22 @@
     return _channelArray;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    AccountModel *model = [AccountModel account];
+    //有帐号
+    if (model) {
+        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
+        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = @"数据-分析";
-    
+    [self setRightBarButtonItem];
     segment = [[JXSegment alloc] initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, 38)];
     [segment updateChannels:self.channelArray];
     segment.delegate = self;
