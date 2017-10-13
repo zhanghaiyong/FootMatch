@@ -138,7 +138,7 @@
             cell = [[[NSBundle mainBundle] loadNibNamed:@"VideoHotCell" owner:self options:nil] lastObject];
         }
         
-        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"上方大图"]];
+        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"defaultVideo"]];
         cell.title.text = model.title;
         cell.time.text = [Uitils timeWithTimeIntervalString:model.pubTime];
         [cell.check setTitle:[NSString stringWithFormat:@"☞ %@",model.read] forState:UIControlStateNormal];
@@ -152,7 +152,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"NormalHotCell" owner:self options:nil] lastObject];
     }
-    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"yuba_note_user_default_icon"]];
+    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"defaultNews"]];
     cell.title.text = model.title;
     if ([model.first integerValue] == 1) {
         cell.top.text = @"置顶";

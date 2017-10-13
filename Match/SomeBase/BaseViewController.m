@@ -23,19 +23,15 @@
 
 - (void)setRightBarButtonItem {
     
-    _avatarBtn = [[UIButton alloc]initWithFrame:CGRectMake(kDeviceWidth-50, kStatusBarHeight, 44, 44)];
+    _avatarBtn = [[UIButton alloc]initWithFrame:CGRectMake(kDeviceWidth-60, kStatusBarHeight, 44, 44)];
     [_avatarBtn setTitle:@"未登录" forState:UIControlStateNormal];
     _avatarBtn.layer.cornerRadius = 22;
     _avatarBtn.layer.masksToBounds = YES;
     _avatarBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-//    [[_avatarBtn imageView] setContentMode:UIViewContentModeScaleToFill];
     [_avatarBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_avatarBtn addTarget:self action:@selector(avatarTap) forControlEvents:UIControlEventTouchUpInside];
-    
     [self.navigationController.view addSubview: _avatarBtn];
     
-//    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:_avatarBtn];
-//    self.navigationItem.rightBarButtonItem = item;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

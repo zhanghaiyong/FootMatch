@@ -27,8 +27,8 @@
     sharebtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
     [sharebtn sizeToFit];
     [sharebtn addTarget:self action:@selector(shareNews) forControlEvents:UIControlEventTouchUpInside];
-    [sharebtn setImage:[UIImage imageNamed:@"addShare"] forState:UIControlStateNormal];
-    [sharebtn setImage:[UIImage imageNamed:@"addShare"] forState:UIControlStateSelected];
+    [sharebtn setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
+    [sharebtn setImage:[UIImage imageNamed:@"分享"] forState:UIControlStateSelected];
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithCustomView:sharebtn];
     self.navigationItem.rightBarButtonItem = shareItem;
     

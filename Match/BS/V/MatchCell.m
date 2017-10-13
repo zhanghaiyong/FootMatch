@@ -26,13 +26,12 @@
     _matchModel = matchModel;
     
     self.typeLabel.text = matchModel.leagueName;
-    [self.backImg sd_setImageWithURL:[NSURL URLWithString:matchModel.sImgUrl] placeholderImage:[UIImage imageNamed:@"上方大图"]];
+    [self.backImg sd_setImageWithURL:[NSURL URLWithString:matchModel.sImgUrl] placeholderImage:[UIImage imageNamed:@"defaultVideo"]];
     self.scoreLab.text = [NSString stringWithFormat:@"%@:%@",matchModel.nHomeScore,matchModel.nGuestScore];
     self.homeTeamName.text = matchModel.sHomeName;
-    [self.homeTeamLogo sd_setImageWithURL:[NSURL URLWithString:matchModel.sHomeLogo] placeholderImage:[UIImage imageNamed:@"yuba_note_user_default_icon"]];
-    
+    [self.homeTeamLogo sd_setImageWithURL:[NSURL URLWithString:matchModel.sHomeLogo] placeholderImage:[UIImage imageNamed:@"default"]];
     self.awayTeamName.text = matchModel.sGuestName;
-    [self.awayTeamLogo sd_setImageWithURL:[NSURL URLWithString:matchModel.sGuestLogo] placeholderImage:[UIImage imageNamed:@"yuba_note_user_default_icon"]];
+    [self.awayTeamLogo sd_setImageWithURL:[NSURL URLWithString:matchModel.sGuestLogo] placeholderImage:[UIImage imageNamed:@"default"]];
     
     self.contentLab.text = matchModel.sTitle;
     

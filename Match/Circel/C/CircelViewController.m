@@ -114,7 +114,7 @@
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"NormalHotCell" owner:self options:nil] lastObject];
     }
-    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"yuba_note_user_default_icon"]];
+    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"defaultNews"]];
     cell.title.text = model.title;
     cell.top.text = @"";
     cell.time.text = [Uitils timeWithTimeIntervalString:model.pubTime];
