@@ -25,9 +25,12 @@
     
     AccountModel *model = [AccountModel account];
     //有帐号
-    if (model) {
+    if ([model.status isEqualToString:@"YES"]) {
         [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
         [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
+    }else {
+        [self.avatarBtn setImage:nil forState:UIControlStateNormal];
+        [self.avatarBtn setTitle:@"未登录" forState:UIControlStateNormal];
     }
 }
 - (void)viewDidLoad {

@@ -21,6 +21,17 @@
 		99B71F8D1F8B608200C33D8C /* JXPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F8A1F8B5F6C00C33D8C /* JXPageView.m */; };
 		99B71F8E1F8B608200C33D8C /* JXSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F871F8B5F6C00C33D8C /* JXSegment.m */; };
 		99B71F8F1F8B608200C33D8C /* UIView+JXView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F891F8B5F6C00C33D8C /* UIView+JXView.m */; };
+		99CF204E1F905276000F917B /* PersonMsg.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CF204D1F905276000F917B /* PersonMsg.storyboard */; };
+		99CF20511F905920000F917B /* PersonMsgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20501F905920000F917B /* PersonMsgTableViewController.m */; };
+		99CF20541F905AE1000F917B /* MsgSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20531F905AE1000F917B /* MsgSettingTableViewController.m */; };
+		99CF20571F90699A000F917B /* SignTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20561F90699A000F917B /* SignTableViewController.m */; };
+		99CF205A1F9087E5000F917B /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20591F9087E5000F917B /* CommentView.m */; };
+		99CF205C1F9087EE000F917B /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CF205B1F9087EE000F917B /* CommentView.xib */; };
+		99CF205F1F908D43000F917B /* WriteCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF205E1F908D43000F917B /* WriteCommentView.m */; };
+		99CF20611F908D4B000F917B /* WriteCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CF20601F908D4B000F917B /* WriteCommentView.xib */; };
+		99CF20671F909C4F000F917B /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20661F909C4F000F917B /* SettingTableViewController.m */; };
+		99CF206A1F909E70000F917B /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF20691F909E70000F917B /* AboutUsViewController.m */; };
+		99CF206D1F909FA2000F917B /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF206B1F909FA1000F917B /* TakePhotoViewController.m */; };
 		99E9D8E81F7F747500D1A781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D8E71F7F747500D1A781 /* AppDelegate.m */; };
 		99E9D8F01F7F747500D1A781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E9D8EF1F7F747500D1A781 /* Assets.xcassets */; };
 		99E9D8F31F7F747500D1A781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E9D8F11F7F747500D1A781 /* LaunchScreen.storyboard */; };
@@ -80,6 +91,25 @@
 		99B71F8A1F8B5F6C00C33D8C /* JXPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXPageView.m; sourceTree = "<group>"; };
 		99B71F8B1F8B5F6C00C33D8C /* JXSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXSegment.h; sourceTree = "<group>"; };
 		99B71F8C1F8B5F6C00C33D8C /* JXPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXPageView.h; sourceTree = "<group>"; };
+		99CF204D1F905276000F917B /* PersonMsg.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonMsg.storyboard; sourceTree = "<group>"; };
+		99CF204F1F905920000F917B /* PersonMsgTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonMsgTableViewController.h; sourceTree = "<group>"; };
+		99CF20501F905920000F917B /* PersonMsgTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonMsgTableViewController.m; sourceTree = "<group>"; };
+		99CF20521F905AE1000F917B /* MsgSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgSettingTableViewController.h; sourceTree = "<group>"; };
+		99CF20531F905AE1000F917B /* MsgSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgSettingTableViewController.m; sourceTree = "<group>"; };
+		99CF20551F90699A000F917B /* SignTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignTableViewController.h; sourceTree = "<group>"; };
+		99CF20561F90699A000F917B /* SignTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignTableViewController.m; sourceTree = "<group>"; };
+		99CF20581F9087E5000F917B /* CommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		99CF20591F9087E5000F917B /* CommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		99CF205B1F9087EE000F917B /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		99CF205D1F908D43000F917B /* WriteCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteCommentView.h; sourceTree = "<group>"; };
+		99CF205E1F908D43000F917B /* WriteCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteCommentView.m; sourceTree = "<group>"; };
+		99CF20601F908D4B000F917B /* WriteCommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteCommentView.xib; sourceTree = "<group>"; };
+		99CF20651F909C4F000F917B /* SettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		99CF20661F909C4F000F917B /* SettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		99CF20681F909E70000F917B /* AboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		99CF20691F909E70000F917B /* AboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		99CF206B1F909FA1000F917B /* TakePhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewController.m; sourceTree = "<group>"; };
+		99CF206C1F909FA2000F917B /* TakePhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewController.h; sourceTree = "<group>"; };
 		99E9D8E31F7F747500D1A781 /* Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Match.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E9D8E61F7F747500D1A781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99E9D8E71F7F747500D1A781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,7 +134,7 @@
 		99E9D9431F7F75B600D1A781 /* SegmentTitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentTitView.m; sourceTree = "<group>"; };
 		99E9D9441F7F75B600D1A781 /* SegmentTitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentTitView.h; sourceTree = "<group>"; };
 		99E9D9451F7F75C800D1A781 /* TabBarCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarCtrl.h; sourceTree = "<group>"; };
-		99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarCtrl.m; sourceTree = "<group>"; };
+		99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TabBarCtrl.m; path = "../New Group/TabBarCtrl.m"; sourceTree = "<group>"; };
 		99E9D9491F7F761100D1A781 /* FootMatch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FootMatch.pch; sourceTree = "<group>"; };
 		99E9D94B1F7F777100D1A781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		99E9D94D1F7F782E00D1A781 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -237,6 +267,39 @@
 			path = JXChannelSegment;
 			sourceTree = "<group>";
 		};
+		99CF204B1F9051A9000F917B /* SomeBase */ = {
+			isa = PBXGroup;
+			children = (
+				99E9D9451F7F75C800D1A781 /* TabBarCtrl.h */,
+				99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */,
+				990090831F8F5AE400607A49 /* BaseViewController.h */,
+				990090841F8F5AE400607A49 /* BaseViewController.m */,
+				990090871F8F683900607A49 /* AccountModel.h */,
+				990090861F8F683800607A49 /* AccountModel.m */,
+				99CF206C1F909FA2000F917B /* TakePhotoViewController.h */,
+				99CF206B1F909FA1000F917B /* TakePhotoViewController.m */,
+			);
+			path = SomeBase;
+			sourceTree = "<group>";
+		};
+		99CF204C1F90522B000F917B /* PersonMsg */ = {
+			isa = PBXGroup;
+			children = (
+				99CF204D1F905276000F917B /* PersonMsg.storyboard */,
+				99CF204F1F905920000F917B /* PersonMsgTableViewController.h */,
+				99CF20501F905920000F917B /* PersonMsgTableViewController.m */,
+				99CF20521F905AE1000F917B /* MsgSettingTableViewController.h */,
+				99CF20531F905AE1000F917B /* MsgSettingTableViewController.m */,
+				99CF20551F90699A000F917B /* SignTableViewController.h */,
+				99CF20561F90699A000F917B /* SignTableViewController.m */,
+				99CF20651F909C4F000F917B /* SettingTableViewController.h */,
+				99CF20661F909C4F000F917B /* SettingTableViewController.m */,
+				99CF20681F909E70000F917B /* AboutUsViewController.h */,
+				99CF20691F909E70000F917B /* AboutUsViewController.m */,
+			);
+			path = PersonMsg;
+			sourceTree = "<group>";
+		};
 		99E9D8DA1F7F747500D1A781 = {
 			isa = PBXGroup;
 			children = (
@@ -263,12 +326,8 @@
 				99E9D8E71F7F747500D1A781 /* AppDelegate.m */,
 				BF7C3CF41F8BAAD400DC999D /* AppDelegate+UPush.h */,
 				BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */,
-				99E9D9451F7F75C800D1A781 /* TabBarCtrl.h */,
-				99E9D9461F7F75C800D1A781 /* TabBarCtrl.m */,
-				990090831F8F5AE400607A49 /* BaseViewController.h */,
-				990090841F8F5AE400607A49 /* BaseViewController.m */,
-				990090871F8F683900607A49 /* AccountModel.h */,
-				990090861F8F683800607A49 /* AccountModel.m */,
+				99CF204C1F90522B000F917B /* PersonMsg */,
+				99CF204B1F9051A9000F917B /* SomeBase */,
 				990090771F8F46A400607A49 /* LoginCtrl */,
 				BF7C3CF01F8BA9C900DC999D /* LoadingViewCtrl */,
 				99E9D9051F7F74F300D1A781 /* Home */,
@@ -371,6 +430,12 @@
 				BF81D0271F7FE5A30078C5ED /* HotDetailCommentCell.h */,
 				BF81D0281F7FE5A30078C5ED /* HotDetailCommentCell.m */,
 				BF81D0291F7FE5A30078C5ED /* HotDetailCommentCell.xib */,
+				99CF20581F9087E5000F917B /* CommentView.h */,
+				99CF20591F9087E5000F917B /* CommentView.m */,
+				99CF205B1F9087EE000F917B /* CommentView.xib */,
+				99CF205D1F908D43000F917B /* WriteCommentView.h */,
+				99CF205E1F908D43000F917B /* WriteCommentView.m */,
+				99CF20601F908D4B000F917B /* WriteCommentView.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -516,8 +581,11 @@
 				990090791F8F48DD00607A49 /* Login.storyboard in Resources */,
 				99E9D8F31F7F747500D1A781 /* LaunchScreen.storyboard in Resources */,
 				BF81D00F1F7FA8EB0078C5ED /* VideoHotCell.xib in Resources */,
+				99CF20611F908D4B000F917B /* WriteCommentView.xib in Resources */,
+				99CF204E1F905276000F917B /* PersonMsg.storyboard in Resources */,
 				99E9D94C1F7F777200D1A781 /* TabBar.storyboard in Resources */,
 				BF81D00A1F7FA5EE0078C5ED /* NormalHotCell.xib in Resources */,
+				99CF205C1F9087EE000F917B /* CommentView.xib in Resources */,
 				BF81D02B1F7FE5A30078C5ED /* HotDetailCommentCell.xib in Resources */,
 				99E9D8F01F7F747500D1A781 /* Assets.xcassets in Resources */,
 				99B71F7E1F8B4F4D00C33D8C /* MatchCell.xib in Resources */,
@@ -581,6 +649,10 @@
 			files = (
 				BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */,
 				9900907C1F8F516600607A49 /* LoginTableViewController.m in Sources */,
+				99CF205A1F9087E5000F917B /* CommentView.m in Sources */,
+				99CF20541F905AE1000F917B /* MsgSettingTableViewController.m in Sources */,
+				99CF206D1F909FA2000F917B /* TakePhotoViewController.m in Sources */,
+				99CF20671F909C4F000F917B /* SettingTableViewController.m in Sources */,
 				99B71F8D1F8B608200C33D8C /* JXPageView.m in Sources */,
 				99B71F8E1F8B608200C33D8C /* JXSegment.m in Sources */,
 				99B71F8F1F8B608200C33D8C /* UIView+JXView.m in Sources */,
@@ -588,6 +660,7 @@
 				BF81D0111F7FD4A00078C5ED /* ShareManagerCtrl.m in Sources */,
 				99E9D9591F7F7AE200D1A781 /* SegmentTitView.m in Sources */,
 				9900907F1F8F517300607A49 /* RegisterTableViewController.m in Sources */,
+				99CF20511F905920000F917B /* PersonMsgTableViewController.m in Sources */,
 				99E9D9581F7F79DB00D1A781 /* PersonViewController.m in Sources */,
 				990090821F8F517E00607A49 /* FindPwdTableViewController.m in Sources */,
 				99E9D94F1F7F782E00D1A781 /* HomePageViewController.m in Sources */,
@@ -598,6 +671,7 @@
 				BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */,
 				BF81D0231F7FDF2D0078C5ED /* HotDetailViewController.m in Sources */,
 				99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */,
+				99CF205F1F908D43000F917B /* WriteCommentView.m in Sources */,
 				990090881F8F683A00607A49 /* AccountModel.m in Sources */,
 				99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */,
 				99E9D9471F7F75C900D1A781 /* TabBarCtrl.m in Sources */,
@@ -609,9 +683,11 @@
 				BF81D0051F7FA5530078C5ED /* HotModel.m in Sources */,
 				99E9D8F61F7F747500D1A781 /* main.m in Sources */,
 				99B71F6A1F8B1D8B00C33D8C /* MatchModel.m in Sources */,
+				99CF206A1F909E70000F917B /* AboutUsViewController.m in Sources */,
 				99E9D9371F7F757100D1A781 /* UIColor+XTExtension.m in Sources */,
 				BF81D02E1F7FFFC30078C5ED /* VideoDetailViewController.m in Sources */,
 				99E9D8E81F7F747500D1A781 /* AppDelegate.m in Sources */,
+				99CF20571F90699A000F917B /* SignTableViewController.m in Sources */,
 				99E9D9521F7F79BC00D1A781 /* MatchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

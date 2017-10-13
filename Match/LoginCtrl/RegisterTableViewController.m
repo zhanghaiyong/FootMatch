@@ -100,9 +100,9 @@
             // 验证成功
             
             AccountModel *model = [[AccountModel alloc]init];
-            model.phone = self.phoneTF.text;
+            model.account = self.phoneTF.text;
             model.pwd = self.pwdTF.text;
-            UIImage *avatar = [UIImage imageNamed:@"帐号"];
+            UIImage *avatar = [UIImage imageNamed:@"默认头像"];
             model.avatar = avatar;
             [AccountModel saveAccount:model];
             [SVProgressHUD showSuccessWithStatus:@"注册成功"];

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AccountModel : NSObject<NSCoding>
+@property (nonatomic,strong)NSString *status;
 @property (nonatomic,strong)NSString *pwd;
 /**
  *  年龄
@@ -30,6 +31,7 @@
  *  手机号
  */
 @property (nonatomic,strong)NSString *phone;
+@property (nonatomic,strong)NSString *account;
 /**
  *  性别
  */

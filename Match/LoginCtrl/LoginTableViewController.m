@@ -75,22 +75,26 @@
         return;
     }
     
+    [SVProgressHUD show];
     AccountModel *model = [AccountModel account];
-    if ([model.phone isEqualToString:self.phoneTF.text] && [model.pwd isEqualToString:self.pwdTF.text]) {
+    if ([model.account isEqualToString:self.phoneTF.text] && [model.pwd isEqualToString:self.pwdTF.text]) {
         
-        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        model.status = @"YES";
+        [AccountModel saveAccount:model];
+        [SVProgressHUD showWithStatus:@"登录中..."];
         [self performSelector:@selector(delayBack) withObject:self afterDelay:3];
         
     //默认帐号
     }else if([self.phoneTF.text isEqualToString:@"18380317172"] && [self.pwdTF.text isEqualToString:@"123456"]){
         
         AccountModel *defaultModel = [[AccountModel alloc]init];
-        defaultModel.phone = self.phoneTF.text;
+        defaultModel.account = self.phoneTF.text;
         defaultModel.pwd = self.pwdTF.text;
-        UIImage *avatar = [UIImage imageNamed:@"帐号"];
+        defaultModel.status = @"YES";
+        UIImage *avatar = [UIImage imageNamed:@"默认头像"];
         defaultModel.avatar = avatar;
         [AccountModel saveAccount:defaultModel];
-        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        [SVProgressHUD showWithStatus:@"登录中..."];
         [self performSelector:@selector(delayBack) withObject:self afterDelay:3];
     }else {
         [SVProgressHUD showErrorWithStatus:@"手机号或密码错误！"];
@@ -98,6 +102,7 @@
 }
 
 - (void)delayBack {
+    [SVProgressHUD showSuccessWithStatus:@"登录成功"];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

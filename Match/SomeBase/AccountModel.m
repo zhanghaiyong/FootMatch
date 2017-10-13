@@ -12,6 +12,8 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     
+    [aCoder  encodeObject:_account forKey:@"account"];
+    [aCoder  encodeObject:_status forKey:@"status"];
     [aCoder  encodeObject:_age forKey:@"age"];
     [aCoder  encodeObject:_pwd forKey:@"pwd"];
     [aCoder encodeObject:_email forKey:@"email"];
@@ -28,6 +30,9 @@
     
     if (self = [super init]) {
         //一定要赋值
+        
+        _account                    = [aDecoder decodeObjectForKey:@"account"];
+        _status                     = [aDecoder decodeObjectForKey:@"status"];
         _pwd                        = [aDecoder decodeObjectForKey:@"pwd"];
         _age                        = [aDecoder decodeObjectForKey:@"age"];
         _email                      = [aDecoder decodeObjectForKey:@"email"];

@@ -522,7 +522,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-oy-cBj">
                                                     <rect key="frame" x="40" y="42.5" width="295" height="1"/>
@@ -565,7 +565,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2u-0B-OiM">
                                                     <rect key="frame" x="40" y="42.5" width="295" height="1"/>
@@ -632,7 +632,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
                                                 </textField>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgg-tB-OtH">
                                                     <rect key="frame" x="40" y="42.5" width="295" height="1"/>
@@ -645,6 +645,9 @@
                                                     <rect key="frame" x="311" y="10" width="24" height="24"/>
                                                     <state key="normal" image="隐藏"/>
                                                     <state key="selected" image="查看"/>
+                                                    <connections>
+                                                        <action selector="checkPwdAction:" destination="ndR-hW-zob" eventType="touchUpInside" id="6sE-iv-VOf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -705,9 +708,11 @@
                     </tableView>
                     <connections>
                         <outlet property="codeTF" destination="hC8-WE-WzM" id="0dM-sv-vw9"/>
+                        <outlet property="getCodeBtn" destination="i5l-wZ-tvL" id="3Zi-EI-ZtA"/>
                         <outlet property="phoneTF" destination="Ctb-42-NI9" id="h0c-dj-cc4"/>
                         <outlet property="pwdOfNewTF" destination="InU-fn-fnU" id="dbo-KU-Hk0"/>
                         <outlet property="showBtn" destination="rwb-sT-hVi" id="hE2-O4-Kxv"/>
+                        <outlet property="sureBtn" destination="N70-Ll-V8F" id="nbv-cO-uRW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Io-ka-Qot" userLabel="First Responder" sceneMemberID="firstResponder"/>

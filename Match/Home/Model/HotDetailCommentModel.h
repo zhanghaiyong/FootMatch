@@ -22,5 +22,6 @@
 @property (nonatomic,strong)NSString *userId;
 @property (nonatomic,strong)NSString *machineCode;
 @property (nonatomic,strong)NSString *approveCount;
+@property (nonatomic,strong)UIImage *avatar;
 @property (nonatomic,assign)CGFloat cellH;
 @end
