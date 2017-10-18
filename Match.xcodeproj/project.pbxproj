@@ -47,6 +47,43 @@
 		99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9541F7F79CD00D1A781 /* CircelViewController.m */; };
 		99E9D9581F7F79DB00D1A781 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9571F7F79DB00D1A781 /* PersonViewController.m */; };
 		99E9D9591F7F7AE200D1A781 /* SegmentTitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E9D9431F7F75B600D1A781 /* SegmentTitView.m */; };
+		99EECB901F96E40300DCC44C /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECB8F1F96E40300DCC44C /* FindTableViewController.m */; };
+		99EECBB51F96EE1F00DCC44C /* CircleListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBA41F96ED7400DCC44C /* CircleListModel.m */; };
+		99EECBB61F96EE1F00DCC44C /* HotPostsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBA51F96ED7400DCC44C /* HotPostsModel.m */; };
+		99EECBB71F96EE1F00DCC44C /* PostDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBA81F96ED7500DCC44C /* PostDetailModel.m */; };
+		99EECBB81F96EE1F00DCC44C /* CircleHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBAA1F96ED8800DCC44C /* CircleHead.m */; };
+		99EECBB91F96EE1F00DCC44C /* HotPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBAC1F96ED8800DCC44C /* HotPostCell.m */; };
+		99EECBBA1F96EE1F00DCC44C /* PostDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBB31F96ED8900DCC44C /* PostDetailCell.m */; };
+		99EECBBB1F96EE1F00DCC44C /* PostDetailHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBAF1F96ED8900DCC44C /* PostDetailHead.m */; };
+		99EECBBC1F96EE1F00DCC44C /* SegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBA11F96ED5C00DCC44C /* SegmentTitleView.m */; };
+		99EECBBD1F96EE1F00DCC44C /* CircelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECB961F96ED1C00DCC44C /* CircelDetailViewController.m */; };
+		99EECBBE1F96EE1F00DCC44C /* CircelNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECB981F96ED1C00DCC44C /* CircelNoticeViewController.m */; };
+		99EECBBF1F96EE1F00DCC44C /* CircelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECB9A1F96ED1D00DCC44C /* CircelsViewController.m */; };
+		99EECBC01F96EE1F00DCC44C /* PostDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECB9B1F96ED1D00DCC44C /* PostDetailViewController.m */; };
+		99EECBC11F96EE3100DCC44C /* CircleHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBA91F96ED8800DCC44C /* CircleHead.xib */; };
+		99EECBC21F96EE3100DCC44C /* HotPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBAE1F96ED8800DCC44C /* HotPostCell.xib */; };
+		99EECBC31F96EE3100DCC44C /* PostDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBAD1F96ED8800DCC44C /* PostDetailCell.xib */; };
+		99EECBC41F96EE3100DCC44C /* PostDetailHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBB11F96ED8900DCC44C /* PostDetailHead.xib */; };
+		99EECBC51F96EE3100DCC44C /* CircelDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECB951F96ED1C00DCC44C /* CircelDetailViewController.xib */; };
+		99EECBC61F96EE3100DCC44C /* CircelNoticeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECB971F96ED1C00DCC44C /* CircelNoticeViewController.xib */; };
+		99EECBC71F96EE3100DCC44C /* CircelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECB941F96ED1C00DCC44C /* CircelsViewController.xib */; };
+		99EECBC81F96EE3100DCC44C /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECB9D1F96ED1D00DCC44C /* PostDetailViewController.xib */; };
+		99EECBCC1F96F32000DCC44C /* FollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBCB1F96F32000DCC44C /* FollowViewController.m */; };
+		99EECBCF1F96F5C100DCC44C /* TeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBCE1F96F5C100DCC44C /* TeamModel.m */; };
+		99EECBD21F96F8E000DCC44C /* MoreTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBD11F96F8E000DCC44C /* MoreTeamViewController.m */; };
+		99EECBD51F96FB8300DCC44C /* TeamTyoeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBD41F96FB8300DCC44C /* TeamTyoeModel.m */; };
+		99EECBD91F97016600DCC44C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBD71F97016600DCC44C /* CollectionViewCell.m */; };
+		99EECBDA1F97016600DCC44C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBD81F97016600DCC44C /* CollectionViewCell.xib */; };
+		99EECBDE1F97030100DCC44C /* TeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBDC1F97030100DCC44C /* TeamTableViewCell.m */; };
+		99EECBDF1F97030100DCC44C /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBDD1F97030100DCC44C /* TeamTableViewCell.xib */; };
+		99EECBE21F97220700DCC44C /* NOTeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBE11F97220700DCC44C /* NOTeamView.m */; };
+		99EECBE41F97221000DCC44C /* NOTeamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBE31F97221000DCC44C /* NOTeamView.xib */; };
+		99EECBE71F97258200DCC44C /* TeamDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBE61F97258200DCC44C /* TeamDetailViewController.m */; };
+		99EECBEA1F9725A700DCC44C /* TeamDetailHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBE91F9725A700DCC44C /* TeamDetailHead.m */; };
+		99EECBEE1F972C1200DCC44C /* TeamDetailHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBED1F972C1200DCC44C /* TeamDetailHead.xib */; };
+		99EECBF11F97341400DCC44C /* TeamSCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBF01F97341400DCC44C /* TeamSCModel.m */; };
+		99EECBF51F9736AD00DCC44C /* TeamSC_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EECBF31F9736AD00DCC44C /* TeamSC_Cell.m */; };
+		99EECBF61F9736AD00DCC44C /* TeamSC_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99EECBF41F9736AD00DCC44C /* TeamSC_Cell.xib */; };
 		BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C3CF21F8BA9D800DC999D /* LoadingViewController.m */; };
 		BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C3CF51F8BAAD400DC999D /* AppDelegate+UPush.m */; };
 		BF81D0051F7FA5530078C5ED /* HotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF81D0041F7FA5530078C5ED /* HotModel.m */; };
@@ -145,6 +182,67 @@
 		99E9D9541F7F79CD00D1A781 /* CircelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelViewController.m; sourceTree = "<group>"; };
 		99E9D9561F7F79DB00D1A781 /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		99E9D9571F7F79DB00D1A781 /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		99EECB8E1F96E40300DCC44C /* FindTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindTableViewController.h; sourceTree = "<group>"; };
+		99EECB8F1F96E40300DCC44C /* FindTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
+		99EECB931F96ED1C00DCC44C /* CircelDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircelDetailViewController.h; sourceTree = "<group>"; };
+		99EECB941F96ED1C00DCC44C /* CircelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircelsViewController.xib; sourceTree = "<group>"; };
+		99EECB951F96ED1C00DCC44C /* CircelDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircelDetailViewController.xib; sourceTree = "<group>"; };
+		99EECB961F96ED1C00DCC44C /* CircelDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelDetailViewController.m; sourceTree = "<group>"; };
+		99EECB971F96ED1C00DCC44C /* CircelNoticeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircelNoticeViewController.xib; sourceTree = "<group>"; };
+		99EECB981F96ED1C00DCC44C /* CircelNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelNoticeViewController.m; sourceTree = "<group>"; };
+		99EECB991F96ED1C00DCC44C /* CircelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircelsViewController.h; sourceTree = "<group>"; };
+		99EECB9A1F96ED1D00DCC44C /* CircelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelsViewController.m; sourceTree = "<group>"; };
+		99EECB9B1F96ED1D00DCC44C /* PostDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailViewController.m; sourceTree = "<group>"; };
+		99EECB9C1F96ED1D00DCC44C /* PostDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailViewController.h; sourceTree = "<group>"; };
+		99EECB9D1F96ED1D00DCC44C /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
+		99EECB9E1F96ED1D00DCC44C /* CircelNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircelNoticeViewController.h; sourceTree = "<group>"; };
+		99EECBA11F96ED5C00DCC44C /* SegmentTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentTitleView.m; sourceTree = "<group>"; };
+		99EECBA21F96ED5C00DCC44C /* SegmentTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentTitleView.h; sourceTree = "<group>"; };
+		99EECBA31F96ED7400DCC44C /* HotPostsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotPostsModel.h; sourceTree = "<group>"; };
+		99EECBA41F96ED7400DCC44C /* CircleListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListModel.m; sourceTree = "<group>"; };
+		99EECBA51F96ED7400DCC44C /* HotPostsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotPostsModel.m; sourceTree = "<group>"; };
+		99EECBA61F96ED7400DCC44C /* PostDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailModel.h; sourceTree = "<group>"; };
+		99EECBA71F96ED7400DCC44C /* CircleListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListModel.h; sourceTree = "<group>"; };
+		99EECBA81F96ED7500DCC44C /* PostDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailModel.m; sourceTree = "<group>"; };
+		99EECBA91F96ED8800DCC44C /* CircleHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleHead.xib; sourceTree = "<group>"; };
+		99EECBAA1F96ED8800DCC44C /* CircleHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleHead.m; sourceTree = "<group>"; };
+		99EECBAB1F96ED8800DCC44C /* CircleHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleHead.h; sourceTree = "<group>"; };
+		99EECBAC1F96ED8800DCC44C /* HotPostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotPostCell.m; sourceTree = "<group>"; };
+		99EECBAD1F96ED8800DCC44C /* PostDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailCell.xib; sourceTree = "<group>"; };
+		99EECBAE1F96ED8800DCC44C /* HotPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotPostCell.xib; sourceTree = "<group>"; };
+		99EECBAF1F96ED8900DCC44C /* PostDetailHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailHead.m; sourceTree = "<group>"; };
+		99EECBB01F96ED8900DCC44C /* PostDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailCell.h; sourceTree = "<group>"; };
+		99EECBB11F96ED8900DCC44C /* PostDetailHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailHead.xib; sourceTree = "<group>"; };
+		99EECBB21F96ED8900DCC44C /* PostDetailHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostDetailHead.h; sourceTree = "<group>"; };
+		99EECBB31F96ED8900DCC44C /* PostDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostDetailCell.m; sourceTree = "<group>"; };
+		99EECBB41F96ED8900DCC44C /* HotPostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotPostCell.h; sourceTree = "<group>"; };
+		99EECBCA1F96F32000DCC44C /* FollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowViewController.h; sourceTree = "<group>"; };
+		99EECBCB1F96F32000DCC44C /* FollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowViewController.m; sourceTree = "<group>"; };
+		99EECBCD1F96F5C100DCC44C /* TeamModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamModel.h; sourceTree = "<group>"; };
+		99EECBCE1F96F5C100DCC44C /* TeamModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamModel.m; sourceTree = "<group>"; };
+		99EECBD01F96F8E000DCC44C /* MoreTeamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreTeamViewController.h; sourceTree = "<group>"; };
+		99EECBD11F96F8E000DCC44C /* MoreTeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreTeamViewController.m; sourceTree = "<group>"; };
+		99EECBD31F96FB8300DCC44C /* TeamTyoeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTyoeModel.h; sourceTree = "<group>"; };
+		99EECBD41F96FB8300DCC44C /* TeamTyoeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTyoeModel.m; sourceTree = "<group>"; };
+		99EECBD61F97016600DCC44C /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		99EECBD71F97016600DCC44C /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		99EECBD81F97016600DCC44C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		99EECBDB1F97030100DCC44C /* TeamTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamTableViewCell.h; sourceTree = "<group>"; };
+		99EECBDC1F97030100DCC44C /* TeamTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewCell.m; sourceTree = "<group>"; };
+		99EECBDD1F97030100DCC44C /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
+		99EECBE01F97220700DCC44C /* NOTeamView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOTeamView.h; sourceTree = "<group>"; };
+		99EECBE11F97220700DCC44C /* NOTeamView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOTeamView.m; sourceTree = "<group>"; };
+		99EECBE31F97221000DCC44C /* NOTeamView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NOTeamView.xib; sourceTree = "<group>"; };
+		99EECBE51F97258200DCC44C /* TeamDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamDetailViewController.h; sourceTree = "<group>"; };
+		99EECBE61F97258200DCC44C /* TeamDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamDetailViewController.m; sourceTree = "<group>"; };
+		99EECBE81F9725A700DCC44C /* TeamDetailHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamDetailHead.h; sourceTree = "<group>"; };
+		99EECBE91F9725A700DCC44C /* TeamDetailHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamDetailHead.m; sourceTree = "<group>"; };
+		99EECBED1F972C1200DCC44C /* TeamDetailHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamDetailHead.xib; sourceTree = "<group>"; };
+		99EECBEF1F97341400DCC44C /* TeamSCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamSCModel.h; sourceTree = "<group>"; };
+		99EECBF01F97341400DCC44C /* TeamSCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamSCModel.m; sourceTree = "<group>"; };
+		99EECBF21F9736AD00DCC44C /* TeamSC_Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamSC_Cell.h; sourceTree = "<group>"; };
+		99EECBF31F9736AD00DCC44C /* TeamSC_Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamSC_Cell.m; sourceTree = "<group>"; };
+		99EECBF41F9736AD00DCC44C /* TeamSC_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamSC_Cell.xib; sourceTree = "<group>"; };
 		BF7C3CF11F8BA9D800DC999D /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		BF7C3CF21F8BA9D800DC999D /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		BF7C3CF41F8BAAD400DC999D /* AppDelegate+UPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UPush.h"; sourceTree = "<group>"; };
@@ -237,23 +335,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		99B71F7F1F8B5E6B00C33D8C /* DataStatistics */ = {
-			isa = PBXGroup;
-			children = (
-				99B71F821F8B5E8500C33D8C /* Ctrl */,
-			);
-			path = DataStatistics;
-			sourceTree = "<group>";
-		};
-		99B71F821F8B5E8500C33D8C /* Ctrl */ = {
-			isa = PBXGroup;
-			children = (
-				99B71F831F8B5E9800C33D8C /* StatisticsViewController.h */,
-				99B71F841F8B5E9800C33D8C /* StatisticsViewController.m */,
-			);
-			path = Ctrl;
-			sourceTree = "<group>";
-		};
 		99B71F861F8B5F4500C33D8C /* JXChannelSegment */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +415,6 @@
 				99E9D8FC1F7F74F300D1A781 /* BS */,
 				99E9D9011F7F74F300D1A781 /* Circel */,
 				99E9D90B1F7F74F300D1A781 /* Person */,
-				99B71F7F1F8B5E6B00C33D8C /* DataStatistics */,
 				99E9D90A1F7F74F300D1A781 /* Common */,
 				99E9D9001F7F74F300D1A781 /* Defaults */,
 				99E9D9091F7F74F300D1A781 /* Thirds */,
@@ -427,8 +507,8 @@
 				BF81D00B1F7FA8EB0078C5ED /* VideoHotCell.h */,
 				BF81D00C1F7FA8EB0078C5ED /* VideoHotCell.m */,
 				BF81D00D1F7FA8EB0078C5ED /* VideoHotCell.xib */,
-				BF81D0271F7FE5A30078C5ED /* HotDetailCommentCell.h */,
 				BF81D0281F7FE5A30078C5ED /* HotDetailCommentCell.m */,
+				BF81D0271F7FE5A30078C5ED /* HotDetailCommentCell.h */,
 				BF81D0291F7FE5A30078C5ED /* HotDetailCommentCell.xib */,
 				99CF20581F9087E5000F917B /* CommentView.h */,
 				99CF20591F9087E5000F917B /* CommentView.m */,
@@ -467,6 +547,8 @@
 		99E9D90B1F7F74F300D1A781 /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				99EECB9F1F96ED4800DCC44C /* Model */,
+				99EECBA01F96ED4800DCC44C /* View */,
 				99E9D90C1F7F74F300D1A781 /* C */,
 			);
 			path = Person;
@@ -475,8 +557,13 @@
 		99E9D90C1F7F74F300D1A781 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				99EECB8E1F96E40300DCC44C /* FindTableViewController.h */,
+				99EECB8F1F96E40300DCC44C /* FindTableViewController.m */,
 				99E9D9561F7F79DB00D1A781 /* PersonViewController.h */,
 				99E9D9571F7F79DB00D1A781 /* PersonViewController.m */,
+				99EECBF81F974F7F00DCC44C /* 数据 */,
+				99EECBC91F96F1D500DCC44C /* 关注 */,
+				99EECB921F96ED0C00DCC44C /* 圈子 */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -490,6 +577,102 @@
 				99E9D9201F7F751800D1A781 /* ShareManagerCtrl.m */,
 			);
 			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		99EECB921F96ED0C00DCC44C /* 圈子 */ = {
+			isa = PBXGroup;
+			children = (
+				99EECB991F96ED1C00DCC44C /* CircelsViewController.h */,
+				99EECB9A1F96ED1D00DCC44C /* CircelsViewController.m */,
+				99EECB941F96ED1C00DCC44C /* CircelsViewController.xib */,
+				99EECB931F96ED1C00DCC44C /* CircelDetailViewController.h */,
+				99EECB961F96ED1C00DCC44C /* CircelDetailViewController.m */,
+				99EECB951F96ED1C00DCC44C /* CircelDetailViewController.xib */,
+				99EECB9E1F96ED1D00DCC44C /* CircelNoticeViewController.h */,
+				99EECB981F96ED1C00DCC44C /* CircelNoticeViewController.m */,
+				99EECB971F96ED1C00DCC44C /* CircelNoticeViewController.xib */,
+				99EECB9C1F96ED1D00DCC44C /* PostDetailViewController.h */,
+				99EECB9B1F96ED1D00DCC44C /* PostDetailViewController.m */,
+				99EECB9D1F96ED1D00DCC44C /* PostDetailViewController.xib */,
+			);
+			path = "圈子";
+			sourceTree = "<group>";
+		};
+		99EECB9F1F96ED4800DCC44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99EECBA71F96ED7400DCC44C /* CircleListModel.h */,
+				99EECBA41F96ED7400DCC44C /* CircleListModel.m */,
+				99EECBA31F96ED7400DCC44C /* HotPostsModel.h */,
+				99EECBA51F96ED7400DCC44C /* HotPostsModel.m */,
+				99EECBA61F96ED7400DCC44C /* PostDetailModel.h */,
+				99EECBA81F96ED7500DCC44C /* PostDetailModel.m */,
+				99EECBD31F96FB8300DCC44C /* TeamTyoeModel.h */,
+				99EECBD41F96FB8300DCC44C /* TeamTyoeModel.m */,
+				99EECBCD1F96F5C100DCC44C /* TeamModel.h */,
+				99EECBCE1F96F5C100DCC44C /* TeamModel.m */,
+				99EECBEF1F97341400DCC44C /* TeamSCModel.h */,
+				99EECBF01F97341400DCC44C /* TeamSCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99EECBA01F96ED4800DCC44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99EECBAB1F96ED8800DCC44C /* CircleHead.h */,
+				99EECBAA1F96ED8800DCC44C /* CircleHead.m */,
+				99EECBA91F96ED8800DCC44C /* CircleHead.xib */,
+				99EECBB41F96ED8900DCC44C /* HotPostCell.h */,
+				99EECBAC1F96ED8800DCC44C /* HotPostCell.m */,
+				99EECBAE1F96ED8800DCC44C /* HotPostCell.xib */,
+				99EECBB01F96ED8900DCC44C /* PostDetailCell.h */,
+				99EECBB31F96ED8900DCC44C /* PostDetailCell.m */,
+				99EECBAD1F96ED8800DCC44C /* PostDetailCell.xib */,
+				99EECBB21F96ED8900DCC44C /* PostDetailHead.h */,
+				99EECBAF1F96ED8900DCC44C /* PostDetailHead.m */,
+				99EECBB11F96ED8900DCC44C /* PostDetailHead.xib */,
+				99EECBA21F96ED5C00DCC44C /* SegmentTitleView.h */,
+				99EECBA11F96ED5C00DCC44C /* SegmentTitleView.m */,
+				99EECBD61F97016600DCC44C /* CollectionViewCell.h */,
+				99EECBD71F97016600DCC44C /* CollectionViewCell.m */,
+				99EECBD81F97016600DCC44C /* CollectionViewCell.xib */,
+				99EECBDB1F97030100DCC44C /* TeamTableViewCell.h */,
+				99EECBDC1F97030100DCC44C /* TeamTableViewCell.m */,
+				99EECBDD1F97030100DCC44C /* TeamTableViewCell.xib */,
+				99EECBE01F97220700DCC44C /* NOTeamView.h */,
+				99EECBE11F97220700DCC44C /* NOTeamView.m */,
+				99EECBE31F97221000DCC44C /* NOTeamView.xib */,
+				99EECBE81F9725A700DCC44C /* TeamDetailHead.h */,
+				99EECBE91F9725A700DCC44C /* TeamDetailHead.m */,
+				99EECBED1F972C1200DCC44C /* TeamDetailHead.xib */,
+				99EECBF21F9736AD00DCC44C /* TeamSC_Cell.h */,
+				99EECBF31F9736AD00DCC44C /* TeamSC_Cell.m */,
+				99EECBF41F9736AD00DCC44C /* TeamSC_Cell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99EECBC91F96F1D500DCC44C /* 关注 */ = {
+			isa = PBXGroup;
+			children = (
+				99EECBCA1F96F32000DCC44C /* FollowViewController.h */,
+				99EECBCB1F96F32000DCC44C /* FollowViewController.m */,
+				99EECBD01F96F8E000DCC44C /* MoreTeamViewController.h */,
+				99EECBD11F96F8E000DCC44C /* MoreTeamViewController.m */,
+				99EECBE51F97258200DCC44C /* TeamDetailViewController.h */,
+				99EECBE61F97258200DCC44C /* TeamDetailViewController.m */,
+			);
+			path = "关注";
+			sourceTree = "<group>";
+		};
+		99EECBF81F974F7F00DCC44C /* 数据 */ = {
+			isa = PBXGroup;
+			children = (
+				99B71F831F8B5E9800C33D8C /* StatisticsViewController.h */,
+				99B71F841F8B5E9800C33D8C /* StatisticsViewController.m */,
+			);
+			path = "数据";
 			sourceTree = "<group>";
 		};
 		BF7C3CF01F8BA9C900DC999D /* LoadingViewCtrl */ = {
@@ -578,12 +761,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EECBC11F96EE3100DCC44C /* CircleHead.xib in Resources */,
+				99EECBC21F96EE3100DCC44C /* HotPostCell.xib in Resources */,
+				99EECBC31F96EE3100DCC44C /* PostDetailCell.xib in Resources */,
+				99EECBC41F96EE3100DCC44C /* PostDetailHead.xib in Resources */,
+				99EECBF61F9736AD00DCC44C /* TeamSC_Cell.xib in Resources */,
+				99EECBC51F96EE3100DCC44C /* CircelDetailViewController.xib in Resources */,
+				99EECBEE1F972C1200DCC44C /* TeamDetailHead.xib in Resources */,
+				99EECBC61F96EE3100DCC44C /* CircelNoticeViewController.xib in Resources */,
+				99EECBC71F96EE3100DCC44C /* CircelsViewController.xib in Resources */,
+				99EECBC81F96EE3100DCC44C /* PostDetailViewController.xib in Resources */,
 				990090791F8F48DD00607A49 /* Login.storyboard in Resources */,
 				99E9D8F31F7F747500D1A781 /* LaunchScreen.storyboard in Resources */,
 				BF81D00F1F7FA8EB0078C5ED /* VideoHotCell.xib in Resources */,
 				99CF20611F908D4B000F917B /* WriteCommentView.xib in Resources */,
+				99EECBE41F97221000DCC44C /* NOTeamView.xib in Resources */,
 				99CF204E1F905276000F917B /* PersonMsg.storyboard in Resources */,
+				99EECBDF1F97030100DCC44C /* TeamTableViewCell.xib in Resources */,
 				99E9D94C1F7F777200D1A781 /* TabBar.storyboard in Resources */,
+				99EECBDA1F97016600DCC44C /* CollectionViewCell.xib in Resources */,
 				BF81D00A1F7FA5EE0078C5ED /* NormalHotCell.xib in Resources */,
 				99CF205C1F9087EE000F917B /* CommentView.xib in Resources */,
 				BF81D02B1F7FE5A30078C5ED /* HotDetailCommentCell.xib in Resources */,
@@ -647,24 +843,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EECBB51F96EE1F00DCC44C /* CircleListModel.m in Sources */,
+				99EECBF11F97341400DCC44C /* TeamSCModel.m in Sources */,
+				99EECBB61F96EE1F00DCC44C /* HotPostsModel.m in Sources */,
+				99EECBB71F96EE1F00DCC44C /* PostDetailModel.m in Sources */,
+				99EECBB81F96EE1F00DCC44C /* CircleHead.m in Sources */,
+				99EECBB91F96EE1F00DCC44C /* HotPostCell.m in Sources */,
+				99EECBBA1F96EE1F00DCC44C /* PostDetailCell.m in Sources */,
+				99EECBD91F97016600DCC44C /* CollectionViewCell.m in Sources */,
+				99EECBF51F9736AD00DCC44C /* TeamSC_Cell.m in Sources */,
+				99EECBBB1F96EE1F00DCC44C /* PostDetailHead.m in Sources */,
+				99EECBBC1F96EE1F00DCC44C /* SegmentTitleView.m in Sources */,
+				99EECBBD1F96EE1F00DCC44C /* CircelDetailViewController.m in Sources */,
+				99EECBBE1F96EE1F00DCC44C /* CircelNoticeViewController.m in Sources */,
+				99EECBCF1F96F5C100DCC44C /* TeamModel.m in Sources */,
+				99EECBBF1F96EE1F00DCC44C /* CircelsViewController.m in Sources */,
+				99EECBC01F96EE1F00DCC44C /* PostDetailViewController.m in Sources */,
 				BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */,
 				9900907C1F8F516600607A49 /* LoginTableViewController.m in Sources */,
 				99CF205A1F9087E5000F917B /* CommentView.m in Sources */,
 				99CF20541F905AE1000F917B /* MsgSettingTableViewController.m in Sources */,
+				99EECB901F96E40300DCC44C /* FindTableViewController.m in Sources */,
 				99CF206D1F909FA2000F917B /* TakePhotoViewController.m in Sources */,
 				99CF20671F909C4F000F917B /* SettingTableViewController.m in Sources */,
+				99EECBD51F96FB8300DCC44C /* TeamTyoeModel.m in Sources */,
 				99B71F8D1F8B608200C33D8C /* JXPageView.m in Sources */,
 				99B71F8E1F8B608200C33D8C /* JXSegment.m in Sources */,
 				99B71F8F1F8B608200C33D8C /* UIView+JXView.m in Sources */,
 				BF81D0101F7FD4A00078C5ED /* KSMNetworkRequest.m in Sources */,
 				BF81D0111F7FD4A00078C5ED /* ShareManagerCtrl.m in Sources */,
 				99E9D9591F7F7AE200D1A781 /* SegmentTitView.m in Sources */,
+				99EECBE71F97258200DCC44C /* TeamDetailViewController.m in Sources */,
+				99EECBDE1F97030100DCC44C /* TeamTableViewCell.m in Sources */,
 				9900907F1F8F517300607A49 /* RegisterTableViewController.m in Sources */,
+				99EECBE21F97220700DCC44C /* NOTeamView.m in Sources */,
+				99EECBEA1F9725A700DCC44C /* TeamDetailHead.m in Sources */,
 				99CF20511F905920000F917B /* PersonMsgTableViewController.m in Sources */,
 				99E9D9581F7F79DB00D1A781 /* PersonViewController.m in Sources */,
 				990090821F8F517E00607A49 /* FindPwdTableViewController.m in Sources */,
 				99E9D94F1F7F782E00D1A781 /* HomePageViewController.m in Sources */,
 				BF81D00E1F7FA8EB0078C5ED /* VideoHotCell.m in Sources */,
+				99EECBD21F96F8E000DCC44C /* MoreTeamViewController.m in Sources */,
 				990090851F8F5AE400607A49 /* BaseViewController.m in Sources */,
 				BF81D02A1F7FE5A30078C5ED /* HotDetailCommentCell.m in Sources */,
 				99E9D9391F7F757100D1A781 /* CALayer+TextFieldBoardColor.m in Sources */,
@@ -685,6 +904,7 @@
 				99B71F6A1F8B1D8B00C33D8C /* MatchModel.m in Sources */,
 				99CF206A1F909E70000F917B /* AboutUsViewController.m in Sources */,
 				99E9D9371F7F757100D1A781 /* UIColor+XTExtension.m in Sources */,
+				99EECBCC1F96F32000DCC44C /* FollowViewController.m in Sources */,
 				BF81D02E1F7FFFC30078C5ED /* VideoDetailViewController.m in Sources */,
 				99E9D8E81F7F747500D1A781 /* AppDelegate.m in Sources */,
 				99CF20571F90699A000F917B /* SignTableViewController.m in Sources */,

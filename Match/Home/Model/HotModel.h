@@ -12,9 +12,6 @@
 
 @property (nonatomic,strong)NSString  *pubTime;
 
-
-
-
 @property (nonatomic,strong)NSString  *isHome;
 
 

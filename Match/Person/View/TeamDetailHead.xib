@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TeamDetailHead">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImg" translatesAutoresizingMaskIntoConstraints="NO" id="w2d-8x-r7y">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+                </imageView>
+                <visualEffectView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxy-LB-fz6">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wiF-G4-rpz">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deh-ap-d9i">
+                                <rect key="frame" x="10" y="25" width="30" height="30"/>
+                                <state key="normal" image="bac"/>
+                                <connections>
+                                    <action selector="backAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="58C-zY-spp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-YS-EzY">
+                                <rect key="frame" x="50" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gqn-f7-aAx"/>
+                                    <constraint firstAttribute="width" constant="40" id="zey-dY-ne5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-qP-lnd">
+                                <rect key="frame" x="95" y="30" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIK-tX-RUZ">
+                                <rect key="frame" x="95" y="47" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KIK-tX-RUZ" firstAttribute="leading" secondItem="jfp-YS-EzY" secondAttribute="trailing" constant="5" id="01s-lM-aDn"/>
+                            <constraint firstItem="deh-ap-d9i" firstAttribute="leading" secondItem="wiF-G4-rpz" secondAttribute="leading" constant="10" id="5hh-z5-FKu"/>
+                            <constraint firstItem="KIK-tX-RUZ" firstAttribute="top" secondItem="9uu-qP-lnd" secondAttribute="bottom" id="a42-fC-mgu"/>
+                            <constraint firstItem="jfp-YS-EzY" firstAttribute="centerY" secondItem="wiF-G4-rpz" secondAttribute="centerY" id="buc-y5-byZ"/>
+                            <constraint firstItem="9uu-qP-lnd" firstAttribute="leading" secondItem="jfp-YS-EzY" secondAttribute="trailing" constant="5" id="hgf-z1-UW6"/>
+                            <constraint firstItem="deh-ap-d9i" firstAttribute="centerY" secondItem="wiF-G4-rpz" secondAttribute="centerY" multiplier="0.8" id="nKG-PX-OGR"/>
+                            <constraint firstItem="jfp-YS-EzY" firstAttribute="leading" secondItem="deh-ap-d9i" secondAttribute="trailing" constant="10" id="ye5-d3-UQf"/>
+                            <constraint firstItem="9uu-qP-lnd" firstAttribute="top" secondItem="jfp-YS-EzY" secondAttribute="top" id="zjl-TB-gp0"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dxy-LB-fz6" secondAttribute="trailing" id="5KA-Mg-0tp"/>
+                <constraint firstItem="Dxy-LB-fz6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NO4-e6-STm"/>
+                <constraint firstItem="w2d-8x-r7y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PHy-cs-MEy"/>
+                <constraint firstItem="w2d-8x-r7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TSm-ly-oXa"/>
+                <constraint firstAttribute="trailing" secondItem="w2d-8x-r7y" secondAttribute="trailing" id="bo7-6A-8IP"/>
+                <constraint firstAttribute="bottom" secondItem="Dxy-LB-fz6" secondAttribute="bottom" id="h5p-iv-lSA"/>
+                <constraint firstAttribute="bottom" secondItem="w2d-8x-r7y" secondAttribute="bottom" id="hJV-oV-glx"/>
+                <constraint firstItem="Dxy-LB-fz6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lii-Sc-P43"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logo" destination="jfp-YS-EzY" id="MpJ-JJ-aVS"/>
+                <outlet property="nameLab" destination="9uu-qP-lnd" id="Ux0-kN-dpH"/>
+                <outlet property="scoreLab" destination="KIK-tX-RUZ" id="kfB-0m-MCi"/>
+            </connections>
+            <point key="canvasLocation" x="-351" y="-418"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bac" width="30" height="30"/>
+        <image name="backImg" width="500" height="354"/>
+    </resources>
+</document>

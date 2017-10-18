@@ -11,6 +11,20 @@
 
 #define checkHost @"www.baidu.com" //检查网络是否可达
 
+#define kTeamDetailMain @"http://118.178.1.136/v2/data/team/detail?a8id=180719461717&channel=AppStore&os_ver=11.0&platform=iOS&sign=de6f656bae5b839e4f354cf1da4b534c&time=1508306629&token=&uid=180719461717&version=234"
+//赛程
+#define kTeamDetailSC @"http://118.178.1.136/v3/team/games?a8id=180719461717&channel=AppStore&os_ver=11.0&pageSize=20&platform=iOS&sign=de6f656bae5b839e4f354cf1da4b534c&time=1508306629&token=&uid=180719461717&version=234"
+
+//新闻
+#define kTeamDetailNews @"http://118.178.1.136/v3/follow/team_news?a8id=180719461717&channel=AppStore&os_ver=11.0&page=0&pageSize=20&platform=iOS&sign=d12526abd739566fe54e95023a47d719&time=1508306806&token=&type=0&uid=180719461717&version=234"
+
+//动态
+#define kTeamAvtive @"http://118.178.1.136/v3/follow/team_news?a8id=180719461717&channel=AppStore&os_ver=11.0&page=0&pageSize=20&platform=iOS&sign=825e8876c5b980b224907847217148bf&teamId=cavaliers&time=1508306855&token=&type=1&uid=180719461717&version=234"
+//球员
+#define kTeamDetailPlayer @"http://cdn2.fungotv.com/a8_sport/data/player-list.html"
+
+#define KTeamData @"http://121.40.193.144/v3/follow/team_list?a8id=180719461717&channel=AppStore&os_ver=11.0&platform=iOS&sign=142961417223862231880284fa339d2b&time=1508290237&token=&type=normal&uid=180719461717&version=234"
+
 #define kHot @"http://118.178.1.136/v3/league/newsList?a8id=115417601971&channel=AppStore&leagueIds=104%2C1%2C4%2C2%2C6%2C9%2C3%2C5%2C8%2C7%2C108&leagueTags=4%2C6%2C7%2C8&os_ver=11.0&pageSize=20&platform=iOS&sign=3e86f478524ed4b5ec3a4019bcee6ea0&time=1506733865&token=&type=1&uid=115417601971&version=234"
 
 #define kHotDetail @"http://a8.tvesou.com/right/news/news_html?a8id=115417601971&channel=AppStore&os_ver=11.0&platform=iOS&sign=1190ed8cad12a0eef425bcdb64c324f3&time=1506780665&token=&uid=115417601971&version=234&zId="
@@ -27,6 +41,14 @@
 
 #define kNBATeam @"http://cdn2.fungotv.com/a8_sport/dataAll/rank.html?time=1507537928329"
 
+#define circleList @"http://quanzi.caipiao.163.com/circle_getBoardList.html?product=caipiao_client&mobileType=iphone&ver=4.33&channel=appstore&apiVer=1.1&apiLevel=27&deviceId=13774C71-1660-4DA5-801B-6443F41E41FE"
+
+#define hotPosts @"http://quanzi.caipiao.163.com/circle_getHotPosts.html?product=caipiao_client&mobileType=iphone&ver=4.33&channel=appstore&apiVer=1.1&apiLevel=27&deviceId=13774C71-1660-4DA5-801B-6443F41E41FE&sort=hot"
+
+#define KCircleDetail @"http://quanzi.caipiao.163.com/circle_getPosts.html?product=caipiao_client&mobileType=iphone&ver=4.33&channel=appstore&apiVer=1.1&apiLevel=27&deviceId=13774C71-1660-4DA5-801B-6443F41E41FE&sort=hot"
+
+
+#define KPostDetail @"http://quanzi.caipiao.163.com/circle_postInfo.html?product=caipiao_client&mobileType=iphone&ver=4.33&channel=appstore&apiVer=1.1&apiLevel=27&deviceId=13774C71-1660-4DA5-801B-6443F41E41FE"
 
 
 #endif /* NSURLs_h */

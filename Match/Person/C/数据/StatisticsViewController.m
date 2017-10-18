@@ -40,6 +40,11 @@
     }
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [SVProgressHUD dismiss];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -50,7 +55,7 @@
     segment.delegate = self;
     [self.view addSubview:segment];
     
-    pageView =[[JXPageView alloc] initWithFrame:CGRectMake(0, segment.bottom, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-49-kHomeBarHeight-segment.height)];
+    pageView =[[JXPageView alloc] initWithFrame:CGRectMake(0, segment.bottom, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-segment.height)];
     pageView.datasource = self;
     pageView.delegate = self;
     [pageView reloadData];

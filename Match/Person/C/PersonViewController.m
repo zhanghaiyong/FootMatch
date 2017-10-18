@@ -20,24 +20,11 @@
 @end
 
 @implementation PersonViewController
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    AccountModel *model = [AccountModel account];
-    //有帐号
-    if ([model.status isEqualToString:@"YES"]) {
-        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
-    }else {
-        [self.avatarBtn setImage:nil forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"未登录" forState:UIControlStateNormal];
-    }
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"竞彩";
-    [self setRightBarButtonItem];
-    tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
+    tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight)];
     tableView.tableFooterView = [UIView new];
     tableView.delegate = self;
     tableView.dataSource = self;

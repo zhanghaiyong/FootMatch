@@ -12,6 +12,7 @@
 #import "VideoHotCell.h"
 #import "HotDetailViewController.h"
 #import "VideoDetailViewController.h"
+
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *tableView;

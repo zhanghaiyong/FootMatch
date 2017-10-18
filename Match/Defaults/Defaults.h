@@ -38,4 +38,6 @@
 #define KDefautKey    @"Account"
 #define MainUrl  @"MainUrl"
 
+#define KTeamKey    @"teamkey"
+
 #endif /* Defaults_h */

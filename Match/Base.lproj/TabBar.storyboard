@@ -60,8 +60,7 @@
                         <segue destination="9Vh-HS-naG" kind="relationship" relationship="viewControllers" id="Z36-Qp-D8Q"/>
                         <segue destination="JAa-DM-fzd" kind="relationship" relationship="viewControllers" id="MRw-ZG-TIN"/>
                         <segue destination="23t-bG-O1R" kind="relationship" relationship="viewControllers" id="Ddt-yN-3Nf"/>
-                        <segue destination="kZK-jN-hHT" kind="relationship" relationship="viewControllers" id="zlQ-5H-2Rx"/>
-                        <segue destination="uQ2-gb-b5N" kind="relationship" relationship="viewControllers" id="fTl-UI-IwY"/>
+                        <segue destination="Ce1-nH-Mkn" kind="relationship" relationship="viewControllers" id="zJI-hn-VTd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ub5-61-Sgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,25 +85,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkg-7X-3w7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1342" y="187"/>
-        </scene>
-        <!--个人-->
-        <scene sceneID="3ta-s8-BB2">
-            <objects>
-                <viewController storyboardIdentifier="PersonViewController" title="个人" id="r3L-uW-DAr" customClass="PersonViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wOh-Xc-FQ0"/>
-                        <viewControllerLayoutGuide type="bottom" id="t6O-km-sQQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NSa-Zi-aAT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Z5W-Lz-l45"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LhM-Qm-275" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1680.8" y="916.1919040479761"/>
         </scene>
         <!--国足-->
         <scene sceneID="g6o-Jf-zxJ">
@@ -163,62 +143,43 @@
             </objects>
             <point key="canvasLocation" x="502" y="-528"/>
         </scene>
-        <!--Statistics View Controller-->
-        <scene sceneID="8nj-8o-ZaL">
+        <!--Find Table View Controller-->
+        <scene sceneID="PbP-cl-kNh">
             <objects>
-                <viewController storyboardIdentifier="StatisticsViewController" id="Jbs-vB-J3u" customClass="StatisticsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FindTableViewController" id="JB1-bS-hLf" customClass="FindTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kkg-E6-A35"/>
-                        <viewControllerLayoutGuide type="bottom" id="2sn-0R-av4"/>
+                        <viewControllerLayoutGuide type="top" id="6xQ-LS-36b"/>
+                        <viewControllerLayoutGuide type="bottom" id="4yM-o1-iO2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2ut-Wy-rxa">
+                    <view key="view" contentMode="scaleToFill" id="joa-1l-4Qi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BRD-jW-KJx"/>
+                    <navigationItem key="navigationItem" id="nmj-kh-Zh2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gTS-JU-8DC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deD-Bg-dWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="1217.5412293853074"/>
+            <point key="canvasLocation" x="1404" y="910"/>
         </scene>
-        <!--竞彩-->
-        <scene sceneID="K14-RW-VRq">
+        <!--发现-->
+        <scene sceneID="B1y-uT-7fz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kZK-jN-hHT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="竞彩" image="tabMineHL" id="9Xp-c2-HRM"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ce1-nH-Mkn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="tabMineHL" id="N9v-Wt-j27"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OJB-En-97M">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ap2-WL-nia">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="r3L-uW-DAr" kind="relationship" relationship="rootViewController" id="TXy-m2-Bny"/>
+                        <segue destination="JB1-bS-hLf" kind="relationship" relationship="rootViewController" id="Ipy-We-x6Z"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UQ9-2N-IzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXv-Tj-EBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840.79999999999995" y="916.1919040479761"/>
-        </scene>
-        <!--数据-分析-->
-        <scene sceneID="C48-tE-Hx6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQ2-gb-b5N" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="数据-分析" image="video_fullV_danmuopenHL" id="YN4-vm-evO"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2bw-6m-4wc">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Jbs-vB-J3u" kind="relationship" relationship="rootViewController" id="8gt-AU-ZKL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0gg-wj-4Ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-601" y="1218"/>
+            <point key="canvasLocation" x="793.60000000000002" y="910.34482758620697"/>
         </scene>
     </scenes>
     <resources>
@@ -226,6 +187,5 @@
         <image name="tabHomeHL" width="24" height="24"/>
         <image name="tabLivingHL" width="24" height="24"/>
         <image name="tabMineHL" width="24" height="24"/>
-        <image name="video_fullV_danmuopenHL" width="24" height="18"/>
     </resources>
 </document>

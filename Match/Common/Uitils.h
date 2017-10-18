@@ -11,7 +11,7 @@
 
 @interface Uitils : NSObject
 
-
++ (NSString *)yearDayIntervalString:(NSString *)timeString;
 + (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
 
 +(BOOL)isNetWorkReach;
