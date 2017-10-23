@@ -59,8 +59,8 @@
                     <connections>
                         <segue destination="9Vh-HS-naG" kind="relationship" relationship="viewControllers" id="Z36-Qp-D8Q"/>
                         <segue destination="JAa-DM-fzd" kind="relationship" relationship="viewControllers" id="MRw-ZG-TIN"/>
-                        <segue destination="23t-bG-O1R" kind="relationship" relationship="viewControllers" id="Ddt-yN-3Nf"/>
                         <segue destination="Ce1-nH-Mkn" kind="relationship" relationship="viewControllers" id="zJI-hn-VTd"/>
+                        <segue destination="23t-bG-O1R" kind="relationship" relationship="viewControllers" id="WXf-eW-Iah"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ub5-61-Sgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,13 +84,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkg-7X-3w7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="187"/>
+            <point key="canvasLocation" x="-490" y="1555"/>
         </scene>
-        <!--国足-->
+        <!--我的-->
         <scene sceneID="g6o-Jf-zxJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="23t-bG-O1R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="国足" image="tabFocusHL" id="edu-99-AAY"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="tabMineHL" id="edu-99-AAY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cto-OW-zOb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -103,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQG-Te-iTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="187"/>
+            <point key="canvasLocation" x="-489" y="848"/>
         </scene>
         <!--首页-->
         <scene sceneID="pDJ-8s-cgV">
@@ -124,11 +124,11 @@
             </objects>
             <point key="canvasLocation" x="502" y="-1227"/>
         </scene>
-        <!--集锦-->
+        <!--快讯-->
         <scene sceneID="VQs-G0-nWw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAa-DM-fzd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="集锦" image="tabLivingHL" id="tS4-Gw-eRB"/>
+                    <tabBarItem key="tabBarItem" title="快讯" image="tabDiscoveryHL" id="tS4-Gw-eRB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Kx-GA-eqa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -160,13 +160,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deD-Bg-dWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404" y="910"/>
+            <point key="canvasLocation" x="1326" y="158"/>
         </scene>
         <!--发现-->
         <scene sceneID="B1y-uT-7fz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ce1-nH-Mkn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="tabMineHL" id="N9v-Wt-j27"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="tabFocusHL" id="N9v-Wt-j27"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ap2-WL-nia">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -179,13 +179,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXv-Tj-EBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793.60000000000002" y="910.34482758620697"/>
+            <point key="canvasLocation" x="502" y="158"/>
         </scene>
     </scenes>
     <resources>
+        <image name="tabDiscoveryHL" width="24" height="24"/>
         <image name="tabFocusHL" width="24" height="24"/>
         <image name="tabHomeHL" width="24" height="24"/>
-        <image name="tabLivingHL" width="24" height="24"/>
         <image name="tabMineHL" width="24" height="24"/>
     </resources>
 </document>

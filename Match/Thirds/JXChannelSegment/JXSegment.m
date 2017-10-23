@@ -9,9 +9,7 @@
 #import "JXSegment.h"
 #import "UIView+JXView.h"
 
-#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
-
-@interface JXSegment(){
+@interface JXSegment() {
     NSArray *widthArray;
     NSInteger _allButtonW;
     UIView *_divideView;
@@ -22,21 +20,22 @@
 
 @implementation JXSegment
 
--(instancetype)initWithFrame:(CGRect)frame{
+-(instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height-0.5)];
-        _scrollView.clipsToBounds = YES;
-        _scrollView.backgroundColor = [UIColor whiteColor];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height-0.5)];
+//        _scrollView.clipsToBounds = YES;
+        _scrollView.bounces = NO;
+        _scrollView.backgroundColor = [UIColor clearColor];
         _scrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:_scrollView];
         
         _divideLineView = [[UIView alloc] init];
-        _divideLineView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        _divideLineView.backgroundColor = [UIColor clearColor];
         [_scrollView addSubview:_divideLineView];
         
         _divideView  = [[UIView alloc] init];
-        _divideView.backgroundColor = [UIColor blackColor];
+        _divideView.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:_divideView];
 //        
 //        UIImageView *divideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-1, self.bounds.size.width, 0.5)];
@@ -66,8 +65,8 @@
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(totalW, 0, buttonW, self.bounds.size.height)];
         button.tag = 1000 + i;
         [button.titleLabel setFont:self.textFont];
-        [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+        [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         [button setTitle:string forState:UIControlStateNormal];
         [button addTarget:self action:@selector(clickSegmentButton:) forControlEvents:UIControlEventTouchUpInside];
         [self.scrollView addSubview:button];
@@ -81,8 +80,8 @@
     }
     
     //如果不足屏幕宽度，平分
-    if (totalW <= SCREEN_WIDTH) {
-        CGFloat buttonW = SCREEN_WIDTH/array.count;
+    if (totalW <= self.bounds.size.width) {
+        CGFloat buttonW = self.bounds.size.width/array.count;
         [widthMutableArray removeAllObjects];
         UIButton *button;
         for (int i=0; i<array.count; i++) {
@@ -98,7 +97,7 @@
     _allButtonW = totalW;
     _scrollView.contentSize = CGSizeMake(totalW,0);
     widthArray = [widthMutableArray copy];
-    _divideLineView.frame = CGRectMake(0, _scrollView.frame.size.height-2, totalW, 2);
+    _divideLineView.frame = CGRectMake(0, _scrollView.frame.size.height-2, self.bounds.size.width, 2);
 }
 
 - (void)clickSegmentButton:(UIButton*)selectedButton{

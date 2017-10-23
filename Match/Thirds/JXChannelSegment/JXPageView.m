@@ -32,9 +32,12 @@
     _scrollview = [[UIScrollView alloc] initWithFrame:self.bounds];
     _scrollview.delegate = self;
     _scrollview.pagingEnabled = YES;
+    
     _scrollview.showsHorizontalScrollIndicator = NO;
     [self addSubview:_scrollview];
-    
+    if (@available(iOS 11.0, *)){
+        [_scrollview setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+    }
 }
 
 - (void)reloadData{
@@ -67,10 +70,9 @@
         }
     }
     return _itemsArray;
-    
 }
 
-- (void)loadViewAtIndex:(NSInteger)index{
+- (void)loadViewAtIndex:(NSInteger)index {
     if (_datasource != nil && [_datasource respondsToSelector:@selector(pageView:viewAtIndex:)]) {
         UIView *view = [_datasource pageView:self viewAtIndex:index];
         view.frame = CGRectMake(self.bounds.size.width*index, 0, self.bounds.size.width, self.bounds.size.height);

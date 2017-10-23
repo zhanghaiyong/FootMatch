@@ -7,14 +7,16 @@
 //
 
 #import "MatchViewController.h"
-#import "MatchModel.h"
-#import "MatchCell.h"
-#import "VideoDetailViewController.h"
+#import "FastNewsModel.h"
+#import "FastNewsCell.h"
+#import "HotDetailViewController.h"
+#import "SegmentTitView.h"
 @interface MatchViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *tableView;
     NSMutableArray *matchDataSource;
     NSInteger page;
+    NSInteger newsType;
 }
 @end
 
@@ -36,10 +38,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"比赛集锦";
+    self.title = @"快讯";
     [self setRightBarButtonItem];
     tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
+    
+    SegmentTitView *segment = [[SegmentTitView alloc]initWithFrame:CGRectMake(kDeviceWidth-120, 0, 120, 30) titles:@[@"全部",@"足球",@"篮球"]];
+    segment.tapLabBack = ^(NSInteger index) {
+        newsType = index;
+        [tableView.mj_header beginRefreshing];
+    };
     tableView.tableFooterView = [UIView new];
+    tableView.tableHeaderView = segment;
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -47,7 +56,6 @@
     }];
     
     tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        
         [self loadMoreData];
     }];
     [self.view addSubview:tableView];
@@ -56,10 +64,10 @@
 
 - (void)refreshData {
     
-    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=0",kVideoHighlight] params:nil success:^(id responseObj) {
+    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=0&type=%ld",FastNewsAll,newsType] params:nil success:^(id responseObj) {
         [tableView.mj_header endRefreshing];
         if ([responseObj[@"error_code"] integerValue] == 1) {
-            matchDataSource = [MatchModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
+            matchDataSource = [FastNewsModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
             [tableView reloadData];
         }
     } failure:^(NSError *error) {
@@ -70,11 +78,11 @@
 - (void)loadMoreData {
     
     page ++;
-    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=%ld",kVideoHighlight,page] params:nil success:^(id responseObj) {
+    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=%ld&type=%ld",FastNewsAll,page,newsType] params:nil success:^(id responseObj) {
         [tableView.mj_footer endRefreshing];
         if ([responseObj[@"error_code"] integerValue] == 1) {
             
-            [matchDataSource addObjectsFromArray:[MatchModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]]];
+            [matchDataSource addObjectsFromArray:[FastNewsModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]]];
             [tableView reloadData];
         }
     } failure:^(NSError *error) {
@@ -99,19 +107,35 @@
 //cellH
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 200;
+    FastNewsModel *model = matchDataSource[indexPath.row];
+    if (model.fold) {
+        return model.cellH;
+    }
+    return 80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *reuser = @"matchCell";
-    MatchCell *cell = [tableView dequeueReusableCellWithIdentifier:reuser];
+    static NSString *reuser = @"FastNewsCell";
+    FastNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:reuser];
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"MatchCell" owner:self options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"FastNewsCell" owner:self options:nil] lastObject];
     }
     
-    MatchModel *model = matchDataSource[indexPath.row];
-    cell.matchModel = model;
+    FastNewsModel *model = matchDataSource[indexPath.row];
+    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"defaultVideo"]];
+    cell.timeLab.text = [Uitils yearDayIntervalString:model.pubTime];
+    cell.contentLab.text = model.desc;
+    cell.foldBtn.selected = model.fold;
+    
+    cell.FoldBlock = ^(BOOL isFold) {
+        
+        ((FastNewsModel *)matchDataSource[indexPath.row]).fold = isFold;
+        [tableView beginUpdates];
+        [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:isFold ? UITableViewRowAnimationBottom : UITableViewRowAnimationTop];
+        [tableView endUpdates];
+    };
+    
     return cell;
 }
 
@@ -119,14 +143,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    MatchModel *model = matchDataSource[indexPath.row];
-        
-    VideoDetailViewController *videoDetailVC = [[VideoDetailViewController alloc]init];
-    videoDetailVC.playUrl = model.sPlayUrl;
-    videoDetailVC.videoTitle = model.sTitle;
-    videoDetailVC.title = @"比赛集锦";
-    videoDetailVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:videoDetailVC animated:YES];
+    FastNewsModel *model = matchDataSource[indexPath.row];
+    HotDetailViewController *hotDetailVC = [[HotDetailViewController alloc]init];
+    hotDetailVC.title = @"热门详情";
+    hotDetailVC.newsId = model.newsId;
+    hotDetailVC.newsTitle = model.title;
+    hotDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:hotDetailVC animated:YES];
 
 }
 

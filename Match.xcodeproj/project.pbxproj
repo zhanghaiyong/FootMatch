@@ -14,6 +14,18 @@
 		990090821F8F517E00607A49 /* FindPwdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090811F8F517E00607A49 /* FindPwdTableViewController.m */; };
 		990090851F8F5AE400607A49 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090841F8F5AE400607A49 /* BaseViewController.m */; };
 		990090881F8F683A00607A49 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 990090861F8F683800607A49 /* AccountModel.m */; };
+		993675C51F9DC07000D8F25A /* HotDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675C41F9DC07000D8F25A /* HotDataView.m */; };
+		993675C81F9DC65200D8F25A /* JJDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675C71F9DC65200D8F25A /* JJDataView.m */; };
+		993675CB1F9DC94F00D8F25A /* SpecialTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675CA1F9DC94F00D8F25A /* SpecialTopicView.m */; };
+		993675CE1F9DC97D00D8F25A /* SpecialTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675CD1F9DC97D00D8F25A /* SpecialTopicModel.m */; };
+		993675D11F9DE1B700D8F25A /* FastNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675D01F9DE1B700D8F25A /* FastNewsModel.m */; };
+		993675D51F9DE3D800D8F25A /* FastNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 993675D31F9DE3D800D8F25A /* FastNewsCell.m */; };
+		993675D61F9DE3D800D8F25A /* FastNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993675D41F9DE3D800D8F25A /* FastNewsCell.xib */; };
+		999404AB1F9D9984008DAB60 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999404AA1F9D9984008DAB60 /* ChannelViewController.m */; };
+		999404AF1F9D9B78008DAB60 /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999404AD1F9D9B78008DAB60 /* ChannelCell.m */; };
+		999404B01F9D9B78008DAB60 /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999404AE1F9D9B78008DAB60 /* ChannelCell.xib */; };
+		999404B91F9DB700008DAB60 /* ChannelHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 999404B71F9DB700008DAB60 /* ChannelHeadView.m */; };
+		999404BA1F9DB700008DAB60 /* ChannelHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 999404B81F9DB700008DAB60 /* ChannelHeadView.xib */; };
 		99B71F6A1F8B1D8B00C33D8C /* MatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F691F8B1D8B00C33D8C /* MatchModel.m */; };
 		99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B71F7B1F8B4F4D00C33D8C /* MatchCell.m */; };
 		99B71F7E1F8B4F4D00C33D8C /* MatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B71F7C1F8B4F4D00C33D8C /* MatchCell.xib */; };
@@ -115,6 +127,27 @@
 		990090841F8F5AE400607A49 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		990090861F8F683800607A49 /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		990090871F8F683900607A49 /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		993675C31F9DC07000D8F25A /* HotDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotDataView.h; sourceTree = "<group>"; };
+		993675C41F9DC07000D8F25A /* HotDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotDataView.m; sourceTree = "<group>"; };
+		993675C61F9DC65200D8F25A /* JJDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJDataView.h; sourceTree = "<group>"; };
+		993675C71F9DC65200D8F25A /* JJDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJDataView.m; sourceTree = "<group>"; };
+		993675C91F9DC94F00D8F25A /* SpecialTopicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialTopicView.h; sourceTree = "<group>"; };
+		993675CA1F9DC94F00D8F25A /* SpecialTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialTopicView.m; sourceTree = "<group>"; };
+		993675CC1F9DC97D00D8F25A /* SpecialTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialTopicModel.h; sourceTree = "<group>"; };
+		993675CD1F9DC97D00D8F25A /* SpecialTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialTopicModel.m; sourceTree = "<group>"; };
+		993675CF1F9DE1B700D8F25A /* FastNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastNewsModel.h; sourceTree = "<group>"; };
+		993675D01F9DE1B700D8F25A /* FastNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastNewsModel.m; sourceTree = "<group>"; };
+		993675D21F9DE3D800D8F25A /* FastNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastNewsCell.h; sourceTree = "<group>"; };
+		993675D31F9DE3D800D8F25A /* FastNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastNewsCell.m; sourceTree = "<group>"; };
+		993675D41F9DE3D800D8F25A /* FastNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FastNewsCell.xib; sourceTree = "<group>"; };
+		999404A91F9D9984008DAB60 /* ChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
+		999404AA1F9D9984008DAB60 /* ChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
+		999404AC1F9D9B78008DAB60 /* ChannelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		999404AD1F9D9B78008DAB60 /* ChannelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
+		999404AE1F9D9B78008DAB60 /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		999404B61F9DB700008DAB60 /* ChannelHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelHeadView.h; sourceTree = "<group>"; };
+		999404B71F9DB700008DAB60 /* ChannelHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelHeadView.m; sourceTree = "<group>"; };
+		999404B81F9DB700008DAB60 /* ChannelHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelHeadView.xib; sourceTree = "<group>"; };
 		99B71F681F8B1D8B00C33D8C /* MatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchModel.h; sourceTree = "<group>"; };
 		99B71F691F8B1D8B00C33D8C /* MatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchModel.m; sourceTree = "<group>"; };
 		99B71F7A1F8B4F4D00C33D8C /* MatchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchCell.h; sourceTree = "<group>"; };
@@ -322,6 +355,9 @@
 				99B71F7A1F8B4F4D00C33D8C /* MatchCell.h */,
 				99B71F7B1F8B4F4D00C33D8C /* MatchCell.m */,
 				99B71F7C1F8B4F4D00C33D8C /* MatchCell.xib */,
+				993675D21F9DE3D800D8F25A /* FastNewsCell.h */,
+				993675D31F9DE3D800D8F25A /* FastNewsCell.m */,
+				993675D41F9DE3D800D8F25A /* FastNewsCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -331,6 +367,8 @@
 			children = (
 				99B71F681F8B1D8B00C33D8C /* MatchModel.h */,
 				99B71F691F8B1D8B00C33D8C /* MatchModel.m */,
+				993675CF1F9DE1B700D8F25A /* FastNewsModel.h */,
+				993675D01F9DE1B700D8F25A /* FastNewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,6 +530,8 @@
 				BF81D0221F7FDF2D0078C5ED /* HotDetailViewController.m */,
 				BF81D02C1F7FFFC30078C5ED /* VideoDetailViewController.h */,
 				BF81D02D1F7FFFC30078C5ED /* VideoDetailViewController.m */,
+				999404A91F9D9984008DAB60 /* ChannelViewController.h */,
+				999404AA1F9D9984008DAB60 /* ChannelViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -499,6 +539,12 @@
 		99E9D9081F7F74F300D1A781 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				993675C31F9DC07000D8F25A /* HotDataView.h */,
+				993675C41F9DC07000D8F25A /* HotDataView.m */,
+				993675C61F9DC65200D8F25A /* JJDataView.h */,
+				993675C71F9DC65200D8F25A /* JJDataView.m */,
+				993675C91F9DC94F00D8F25A /* SpecialTopicView.h */,
+				993675CA1F9DC94F00D8F25A /* SpecialTopicView.m */,
 				99E9D9441F7F75B600D1A781 /* SegmentTitView.h */,
 				99E9D9431F7F75B600D1A781 /* SegmentTitView.m */,
 				BF81D0061F7FA5EE0078C5ED /* NormalHotCell.h */,
@@ -516,6 +562,12 @@
 				99CF205D1F908D43000F917B /* WriteCommentView.h */,
 				99CF205E1F908D43000F917B /* WriteCommentView.m */,
 				99CF20601F908D4B000F917B /* WriteCommentView.xib */,
+				999404AC1F9D9B78008DAB60 /* ChannelCell.h */,
+				999404AD1F9D9B78008DAB60 /* ChannelCell.m */,
+				999404AE1F9D9B78008DAB60 /* ChannelCell.xib */,
+				999404B61F9DB700008DAB60 /* ChannelHeadView.h */,
+				999404B71F9DB700008DAB60 /* ChannelHeadView.m */,
+				999404B81F9DB700008DAB60 /* ChannelHeadView.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -691,6 +743,8 @@
 				BF81D0041F7FA5530078C5ED /* HotModel.m */,
 				BF81D0241F7FE3210078C5ED /* HotDetailCommentModel.h */,
 				BF81D0251F7FE3210078C5ED /* HotDetailCommentModel.m */,
+				993675CC1F9DC97D00D8F25A /* SpecialTopicModel.h */,
+				993675CD1F9DC97D00D8F25A /* SpecialTopicModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -767,6 +821,8 @@
 				99EECBC41F96EE3100DCC44C /* PostDetailHead.xib in Resources */,
 				99EECBF61F9736AD00DCC44C /* TeamSC_Cell.xib in Resources */,
 				99EECBC51F96EE3100DCC44C /* CircelDetailViewController.xib in Resources */,
+				993675D61F9DE3D800D8F25A /* FastNewsCell.xib in Resources */,
+				999404BA1F9DB700008DAB60 /* ChannelHeadView.xib in Resources */,
 				99EECBEE1F972C1200DCC44C /* TeamDetailHead.xib in Resources */,
 				99EECBC61F96EE3100DCC44C /* CircelNoticeViewController.xib in Resources */,
 				99EECBC71F96EE3100DCC44C /* CircelsViewController.xib in Resources */,
@@ -780,6 +836,7 @@
 				99EECBDF1F97030100DCC44C /* TeamTableViewCell.xib in Resources */,
 				99E9D94C1F7F777200D1A781 /* TabBar.storyboard in Resources */,
 				99EECBDA1F97016600DCC44C /* CollectionViewCell.xib in Resources */,
+				999404B01F9D9B78008DAB60 /* ChannelCell.xib in Resources */,
 				BF81D00A1F7FA5EE0078C5ED /* NormalHotCell.xib in Resources */,
 				99CF205C1F9087EE000F917B /* CommentView.xib in Resources */,
 				BF81D02B1F7FE5A30078C5ED /* HotDetailCommentCell.xib in Resources */,
@@ -853,11 +910,13 @@
 				99EECBD91F97016600DCC44C /* CollectionViewCell.m in Sources */,
 				99EECBF51F9736AD00DCC44C /* TeamSC_Cell.m in Sources */,
 				99EECBBB1F96EE1F00DCC44C /* PostDetailHead.m in Sources */,
+				993675C81F9DC65200D8F25A /* JJDataView.m in Sources */,
 				99EECBBC1F96EE1F00DCC44C /* SegmentTitleView.m in Sources */,
 				99EECBBD1F96EE1F00DCC44C /* CircelDetailViewController.m in Sources */,
 				99EECBBE1F96EE1F00DCC44C /* CircelNoticeViewController.m in Sources */,
 				99EECBCF1F96F5C100DCC44C /* TeamModel.m in Sources */,
 				99EECBBF1F96EE1F00DCC44C /* CircelsViewController.m in Sources */,
+				993675CB1F9DC94F00D8F25A /* SpecialTopicView.m in Sources */,
 				99EECBC01F96EE1F00DCC44C /* PostDetailViewController.m in Sources */,
 				BF7C3CF31F8BAA3000DC999D /* LoadingViewController.m in Sources */,
 				9900907C1F8F516600607A49 /* LoginTableViewController.m in Sources */,
@@ -885,6 +944,7 @@
 				BF81D00E1F7FA8EB0078C5ED /* VideoHotCell.m in Sources */,
 				99EECBD21F96F8E000DCC44C /* MoreTeamViewController.m in Sources */,
 				990090851F8F5AE400607A49 /* BaseViewController.m in Sources */,
+				999404B91F9DB700008DAB60 /* ChannelHeadView.m in Sources */,
 				BF81D02A1F7FE5A30078C5ED /* HotDetailCommentCell.m in Sources */,
 				99E9D9391F7F757100D1A781 /* CALayer+TextFieldBoardColor.m in Sources */,
 				BF7C3CF61F8BAAD500DC999D /* AppDelegate+UPush.m in Sources */,
@@ -892,14 +952,17 @@
 				99E9D9551F7F79CD00D1A781 /* CircelViewController.m in Sources */,
 				99CF205F1F908D43000F917B /* WriteCommentView.m in Sources */,
 				990090881F8F683A00607A49 /* AccountModel.m in Sources */,
+				993675C51F9DC07000D8F25A /* HotDataView.m in Sources */,
 				99B71F7D1F8B4F4D00C33D8C /* MatchCell.m in Sources */,
 				99E9D9471F7F75C900D1A781 /* TabBarCtrl.m in Sources */,
 				BF81D0261F7FE3210078C5ED /* HotDetailCommentModel.m in Sources */,
+				999404AB1F9D9984008DAB60 /* ChannelViewController.m in Sources */,
 				99E9D93A1F7F757100D1A781 /* Uitils.m in Sources */,
 				99E9D9381F7F757100D1A781 /* UIViewExt.m in Sources */,
 				99B71F851F8B5E9800C33D8C /* StatisticsViewController.m in Sources */,
 				BF81D0091F7FA5EE0078C5ED /* NormalHotCell.m in Sources */,
 				BF81D0051F7FA5530078C5ED /* HotModel.m in Sources */,
+				993675D51F9DE3D800D8F25A /* FastNewsCell.m in Sources */,
 				99E9D8F61F7F747500D1A781 /* main.m in Sources */,
 				99B71F6A1F8B1D8B00C33D8C /* MatchModel.m in Sources */,
 				99CF206A1F909E70000F917B /* AboutUsViewController.m in Sources */,
@@ -907,7 +970,10 @@
 				99EECBCC1F96F32000DCC44C /* FollowViewController.m in Sources */,
 				BF81D02E1F7FFFC30078C5ED /* VideoDetailViewController.m in Sources */,
 				99E9D8E81F7F747500D1A781 /* AppDelegate.m in Sources */,
+				999404AF1F9D9B78008DAB60 /* ChannelCell.m in Sources */,
 				99CF20571F90699A000F917B /* SignTableViewController.m in Sources */,
+				993675CE1F9DC97D00D8F25A /* SpecialTopicModel.m in Sources */,
+				993675D11F9DE1B700D8F25A /* FastNewsModel.m in Sources */,
 				99E9D9521F7F79BC00D1A781 /* MatchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1055,7 +1121,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/PE/FootMatch/Match/FootMatch.pch;
+				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1078,7 +1144,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/zhanghaiyong/Desktop/PE/FootMatch/Match/FootMatch.pch;
+				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

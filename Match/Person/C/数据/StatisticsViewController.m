@@ -50,6 +50,7 @@
     
     self.title = @"数据-分析";
     [self setRightBarButtonItem];
+    self.view.backgroundColor = [UIColor whiteColor];
     segment = [[JXSegment alloc] initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, 38)];
     [segment updateChannels:self.channelArray];
     segment.delegate = self;
@@ -72,7 +73,7 @@
 
     [SVProgressHUD showWithStatus:@"加载中..."];
     UIView *view = [[UIView alloc] init];
-    UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-90)];
+    UIWebView *webView = [[UIWebView alloc]initWithFrame:pageView.bounds];
     [webView scalesPageToFit];
     webView.delegate = self;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@&leagueId=%ld",kNBATeam,index+1]];

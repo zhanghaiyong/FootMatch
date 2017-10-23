@@ -7,15 +7,9 @@
 //
 
 #import "CircelViewController.h"
-#import "HotModel.h"
-#import "NormalHotCell.h"
-#import "HotDetailViewController.h"
-@interface CircelViewController ()<UITableViewDelegate,UITableViewDataSource>
-{
-    UITableView *tableView;
-    NSMutableArray *hotDataSource;
-    NSInteger page;
-}
+#import "PersonMsgTableViewController.h"
+#import "LoginTableViewController.h"
+@interface CircelViewController ()
 
 @end
 
@@ -26,117 +20,24 @@
     AccountModel *model = [AccountModel account];
     //有帐号
     if ([model.status isEqualToString:@"YES"]) {
-        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
+        UIStoryboard *SB = [UIStoryboard storyboardWithName:@"PersonMsg" bundle:nil];
+        PersonMsgTableViewController *persinMsgVC = [SB instantiateViewControllerWithIdentifier:@"PersonMsgTableViewController"];
+        persinMsgVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:persinMsgVC animated:YES];
     }else {
-        [self.avatarBtn setImage:nil forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"未登录" forState:UIControlStateNormal];
+        UIStoryboard *SB = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+        LoginTableViewController *LoginVC = [SB instantiateViewControllerWithIdentifier:@"LoginTableViewController"];
+        UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:LoginVC];
+        [self presentViewController:navi animated:YES completion:^{
+            self.tabBarController.selectedIndex = 0;
+        }];
     }
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"国足加油";
-    [self setRightBarButtonItem];
-    tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, KDeviceHeight-kStatusBarHeight-kNavigationBarHeight-kHomeBarHeight-49)];
-    tableView.tableFooterView = [UIView new];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self refreshData];
-    }];
-    [self.view addSubview:tableView];
-    
-    tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        
-        [self loadMoreData];
-    }];
-    [tableView.mj_header beginRefreshing];
-}
-
-- (void)refreshData {
-    
-    //&page=0
-    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=0",kChinaFootBall] params:nil success:^(id responseObj) {
-        [tableView.mj_header endRefreshing];
-        if ([responseObj[@"error_code"] integerValue] == 1) {
-            hotDataSource = [HotModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]];
-            [tableView reloadData];
-        }
-    } failure:^(NSError *error) {
-        [tableView.mj_header endRefreshing];
-    }];
-}
-
-- (void)loadMoreData {
-    
-    page ++;
-    [KSMNetworkRequest postRequest:[NSString stringWithFormat:@"%@&page=%ld",kChinaFootBall,page] params:nil success:^(id responseObj) {
-        [tableView.mj_footer endRefreshing];
-        if ([responseObj[@"error_code"] integerValue] == 1) {
-            
-            [hotDataSource addObjectsFromArray:[HotModel mj_objectArrayWithKeyValuesArray:responseObj[@"data"]]];
-            [tableView reloadData];
-        }
-    } failure:^(NSError *error) {
-        [tableView.mj_footer endRefreshing];
-    }];
-}
-
-#pragma mark UITableViewDelegate
-
-//sectionCount
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
-}
-
-//rowCount
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return hotDataSource.count;
-}
-
-//cellH
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    return 80;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    HotModel *model = hotDataSource[indexPath.row];
-
-    static NSString *reuser = @"normalCell";
-    NormalHotCell *cell = [tableView dequeueReusableCellWithIdentifier:reuser];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"NormalHotCell" owner:self options:nil] lastObject];
-    }
-    [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.image] placeholderImage:[UIImage imageNamed:@"defaultNews"]];
-    cell.title.text = model.title;
-    cell.top.text = @"";
-    cell.time.text = [Uitils timeWithTimeIntervalString:model.pubTime];
-    [cell.check setTitle:[NSString stringWithFormat:@"☞ %@",model.read] forState:UIControlStateNormal];
-    [cell.comment setTitle:[NSString stringWithFormat:@"✬ %@",model.comment] forState:UIControlStateNormal];
-    return cell;
     
 }
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    HotModel *model = hotDataSource[indexPath.row];
-
-    HotDetailViewController *hotDetailVC = [[HotDetailViewController alloc]init];
-    hotDetailVC.newsId = model.newsId;
-    hotDetailVC.newsTitle = model.title;
-    hotDetailVC.title = @"关注国足";
-    hotDetailVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:hotDetailVC animated:YES];
-
-}
-
 
 @end
