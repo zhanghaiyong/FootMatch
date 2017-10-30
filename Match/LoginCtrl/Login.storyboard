@@ -41,7 +41,7 @@
                                                         <action selector="backAction:" destination="beJ-Sw-dBM" eventType="touchUpInside" id="YSG-Ec-C7m"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-121" translatesAutoresizingMaskIntoConstraints="NO" id="X98-ko-d0D">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-120" translatesAutoresizingMaskIntoConstraints="NO" id="X98-ko-d0D">
                                                     <rect key="frame" x="127" y="30" width="120" height="120"/>
                                                 </imageView>
                                             </subviews>
@@ -721,7 +721,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-121" width="120" height="120"/>
+        <image name="Icon-120" width="120" height="120"/>
         <image name="密码" width="24" height="24"/>
         <image name="帐号" width="24" height="24"/>
         <image name="手机" width="24" height="24"/>

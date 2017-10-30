@@ -28,16 +28,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    AccountModel *model = [AccountModel account];
-    //有帐号
-    if ([model.status isEqualToString:@"YES"]) {
-        [self.avatarBtn setImage:model.avatar forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"" forState:UIControlStateNormal];
-    }else {
-        [self.avatarBtn setImage:nil forState:UIControlStateNormal];
-        [self.avatarBtn setTitle:@"未登录" forState:UIControlStateNormal];
-    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -49,7 +39,6 @@
     [super viewDidLoad];
     
     self.title = @"数据-分析";
-    [self setRightBarButtonItem];
     self.view.backgroundColor = [UIColor whiteColor];
     segment = [[JXSegment alloc] initWithFrame:CGRectMake(0, kStatusBarHeight+kNavigationBarHeight, kDeviceWidth, 38)];
     [segment updateChannels:self.channelArray];

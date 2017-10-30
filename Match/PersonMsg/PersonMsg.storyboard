@@ -443,7 +443,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-121" translatesAutoresizingMaskIntoConstraints="NO" id="8el-aK-sO1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-120" translatesAutoresizingMaskIntoConstraints="NO" id="8el-aK-sO1">
                                 <rect key="frame" x="127.5" y="120" width="120" height="120"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇冠体育-官方体育掌上咨询快车 V1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRW-Ru-fyU">
@@ -655,6 +655,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-121" width="120" height="120"/>
+        <image name="Icon-120" width="120" height="120"/>
     </resources>
 </document>
