@@ -22,9 +22,10 @@
     if ([model.status isEqualToString:@"YES"]) {
         UIStoryboard *SB = [UIStoryboard storyboardWithName:@"PersonMsg" bundle:nil];
         PersonMsgTableViewController *persinMsgVC = [SB instantiateViewControllerWithIdentifier:@"PersonMsgTableViewController"];
-        persinMsgVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:persinMsgVC animated:YES];
-        self.tabBarController.selectedIndex = 0;
+        UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:persinMsgVC];
+        [self presentViewController:navi animated:YES completion:^{
+            self.tabBarController.selectedIndex = 0;
+        }];
         
     }else {
         UIStoryboard *SB = [UIStoryboard storyboardWithName:@"Login" bundle:nil];

@@ -23,6 +23,16 @@
     model = [AccountModel account];
     collects = [NSArray arrayWithArray:model.collects];
     self.tableView.tableFooterView = [UIView new];
+    
+    if (collects.count == 0) {
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 200, kDeviceWidth, 40)];
+        label.textColor = [UIColor darkTextColor];
+        label.alpha = 0.5;
+        label.font = [UIFont systemFontOfSize:25];
+        label.text = @"您还什么都没收藏！";
+        label.textAlignment = NSTextAlignmentCenter;
+        [self.tableView addSubview:label];
+    }
 }
 
 

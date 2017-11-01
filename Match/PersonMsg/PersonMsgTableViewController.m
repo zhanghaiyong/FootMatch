@@ -33,8 +33,20 @@
     
     self.title = @"个人中心";
     self.tableView.tableFooterView = [UIView new];
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    [btn setImage:[UIImage imageNamed:@"bac"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.leftBarButtonItem = backItem;
+    
 }
 
+- (void)backAction {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -152,7 +164,9 @@
 
 - (void)delayLogoutAction {
     [SVProgressHUD showInfoWithStatus:@"已退出"];
+    [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 

@@ -17,7 +17,7 @@
 
 #define MainColor RGB(255,128,0)
 
-#define KJPUSHKEY @"c7d08fde37b426b3eedd9179"
+#define KJPUSHKEY @"402ee0ad9ed83acd19c99b36"
 
 #define kDeviceWidth [UIScreen mainScreen].bounds.size.width
 
