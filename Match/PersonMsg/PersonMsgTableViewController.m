@@ -10,6 +10,7 @@
 #import "MsgSettingTableViewController.h"
 #import "SignTableViewController.h"
 #import "TakePhotoViewController.h"
+#import "CollectsTableViewController.h"
 @interface PersonMsgTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     AccountModel *model;
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *emailLab;
 @property (weak, nonatomic) IBOutlet UILabel *sexLab;
 @property (weak, nonatomic) IBOutlet UITextView *signLab;
+@property (weak, nonatomic) IBOutlet UILabel *integralLab;
+@property (weak, nonatomic) IBOutlet UIButton *SignInBtn;
 
 @end
 
@@ -42,6 +45,17 @@
     self.emailLab.text = model.email;
     self.sexLab.text = model.sex;
     self.signLab.text = model.signature;
+    self.integralLab.text = model.integral;
+    
+    if ([model.signIn isEqualToString:@"YES"]) {
+        [self.SignInBtn setTitle:@"已签到" forState:UIControlStateNormal];
+        self.SignInBtn.alpha = 0.4;
+        self.SignInBtn.userInteractionEnabled = NO;
+    }else {
+        [self.SignInBtn setTitle:@"签到" forState:UIControlStateNormal];
+        self.SignInBtn.alpha = 1;
+        self.SignInBtn.userInteractionEnabled = YES;
+    }
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(repeatAvatar)];
     [self.avatar addGestureRecognizer:tap];
@@ -71,6 +85,10 @@
             MsgSettingTableViewController *MsgSettingVC = [SB instantiateViewControllerWithIdentifier:@"MsgSettingTableViewController"];
             MsgSettingVC.title = @"修改昵称";
             [self.navigationController pushViewController:MsgSettingVC animated:YES];
+        }else if (indexPath.row == 3){ //收藏
+            CollectsTableViewController *collectsVC = [[CollectsTableViewController alloc]init];
+            collectsVC.title = @"我的收藏";
+            [self.navigationController pushViewController:collectsVC animated:YES];
         }
     }else if (indexPath.section == 1) {
         if (indexPath.row == 0) { //手机号
@@ -115,6 +133,19 @@
     
     [self performSelector:@selector(delayLogoutAction) withObject:self afterDelay:1];
     model.status = @"NO";
+    [AccountModel saveAccount:model];
+    
+}
+
+- (IBAction)SignInAction:(id)sender {
+    
+    self.SignInBtn.alpha = 0.4;
+    self.SignInBtn.userInteractionEnabled = NO;
+    [self.SignInBtn setTitle:@"已签到" forState:UIControlStateNormal];
+    
+    self.integralLab.text = [NSString stringWithFormat:@"%ld",[self.integralLab.text integerValue] + 100];
+    model.integral = self.integralLab.text;
+    model.signIn = @"YES";
     [AccountModel saveAccount:model];
     
 }

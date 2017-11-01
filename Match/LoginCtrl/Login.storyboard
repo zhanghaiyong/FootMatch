@@ -42,7 +42,7 @@
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-120" translatesAutoresizingMaskIntoConstraints="NO" id="X98-ko-d0D">
-                                                    <rect key="frame" x="127" y="30" width="120" height="120"/>
+                                                    <rect key="frame" x="157" y="60" width="60" height="60"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -721,7 +721,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-120" width="120" height="120"/>
+        <image name="Icon-120" width="60" height="60"/>
         <image name="密码" width="24" height="24"/>
         <image name="帐号" width="24" height="24"/>
         <image name="手机" width="24" height="24"/>

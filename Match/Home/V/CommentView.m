@@ -26,19 +26,23 @@
 }
 - (IBAction)collectAction:(UIButton *)sender {
     
-    AccountModel *model = [AccountModel account];
-    //有帐号
-    if ([model.status isEqualToString:@"YES"]) {
-        if (sender.selected) {
-            sender.selected = NO;
-            [SVProgressHUD showSuccessWithStatus:@"取消收藏"];
-        }else {
-            sender.selected = YES;
-            [SVProgressHUD showSuccessWithStatus:@"已收藏"];
-        }
-    }else {
-        [SVProgressHUD showInfoWithStatus:@"登录后可收藏"];
+    if (_CollectBack) {
+        _CollectBack();
     }
+    
+//    AccountModel *model = [AccountModel account];
+//    //有帐号
+//    if ([model.status isEqualToString:@"YES"]) {
+//        if (sender.selected) {
+//            sender.selected = NO;
+//            [SVProgressHUD showSuccessWithStatus:@"取消收藏"];
+//        }else {
+//            sender.selected = YES;
+//            [SVProgressHUD showSuccessWithStatus:@"已收藏"];
+//        }
+//    }else {
+//        [SVProgressHUD showInfoWithStatus:@"登录后可收藏"];
+//    }
     
 
 }

@@ -9,7 +9,17 @@
 #import <Foundation/Foundation.h>
 
 @interface AccountModel : NSObject<NSCoding>
+
+@property (nonatomic,strong)NSMutableArray *collects;
+
+//签到
+@property (nonatomic,strong)NSString *signIn;
+
+//积分
+@property (nonatomic,strong)NSString *integral;
+//登录状态
 @property (nonatomic,strong)NSString *status;
+//密码
 @property (nonatomic,strong)NSString *pwd;
 /**
  *  年龄

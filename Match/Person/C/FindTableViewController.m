@@ -11,6 +11,8 @@
 #import "CircelsViewController.h"
 #import "FollowViewController.h"
 #import "StatisticsViewController.h"
+#import "IntegralShopViewController.h"
+
 @interface FindTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *tableView;
@@ -51,7 +53,7 @@
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -98,9 +100,12 @@
             default:
                 break;
         }
-    }else {
+    }else if(indexPath.section == 1){
         cell.textLabel.text = @"一起看球";
         cell.imageView.image = [UIImage imageNamed:@"tabMineHL"];
+    }else {
+        cell.textLabel.text = @"积分商城";
+        cell.imageView.image = [UIImage imageNamed:@"tabHomeHL"];
     }
     return cell;
 }
@@ -149,13 +154,18 @@
             default:
                 break;
         }
-    }else {
+    }else if(indexPath.section == 1){
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"敬请期待" message:@"" preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
         }]];
         [self presentViewController:alert animated:YES completion:nil];
+    }else {
+        IntegralShopViewController *IntegralShopVC = [[IntegralShopViewController alloc]init];
+        IntegralShopVC.title  = @"积分商城";
+        IntegralShopVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:IntegralShopVC animated:YES];
     }
 }
 

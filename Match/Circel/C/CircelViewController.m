@@ -24,6 +24,8 @@
         PersonMsgTableViewController *persinMsgVC = [SB instantiateViewControllerWithIdentifier:@"PersonMsgTableViewController"];
         persinMsgVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:persinMsgVC animated:YES];
+        self.tabBarController.selectedIndex = 0;
+        
     }else {
         UIStoryboard *SB = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
         LoginTableViewController *LoginVC = [SB instantiateViewControllerWithIdentifier:@"LoginTableViewController"];
@@ -32,8 +34,8 @@
             self.tabBarController.selectedIndex = 0;
         }];
     }
-    
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

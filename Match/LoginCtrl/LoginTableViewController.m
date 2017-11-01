@@ -87,15 +87,25 @@
     //默认帐号
     }else if([self.phoneTF.text isEqualToString:@"18380317172"] && [self.pwdTF.text isEqualToString:@"123456"]){
         
-        AccountModel *defaultModel = [[AccountModel alloc]init];
-        defaultModel.account = self.phoneTF.text;
-        defaultModel.pwd = self.pwdTF.text;
-        defaultModel.status = @"YES";
-        UIImage *avatar = [UIImage imageNamed:@"默认头像"];
-        defaultModel.avatar = avatar;
-        [AccountModel saveAccount:defaultModel];
-        [SVProgressHUD showWithStatus:@"登录中..."];
-        [self performSelector:@selector(delayBack) withObject:self afterDelay:3];
+        if (model.status.length > 0) {
+            model.status = @"YES";
+            [AccountModel saveAccount:model];
+            [SVProgressHUD showWithStatus:@"登录中..."];
+            [self performSelector:@selector(delayBack) withObject:self afterDelay:3];
+        }else {
+        
+            AccountModel *defaultModel = [[AccountModel alloc]init];
+            defaultModel.account = self.phoneTF.text;
+            defaultModel.pwd = self.pwdTF.text;
+            defaultModel.status = @"YES";
+            defaultModel.integral = @"100";
+            defaultModel.signIn = @"NO";
+            UIImage *avatar = [UIImage imageNamed:@"默认头像"];
+            defaultModel.avatar = avatar;
+            [AccountModel saveAccount:defaultModel];
+            [SVProgressHUD showWithStatus:@"登录中..."];
+            [self performSelector:@selector(delayBack) withObject:self afterDelay:3];
+        }
     }else {
         [SVProgressHUD showErrorWithStatus:@"手机号或密码错误！"];
     }

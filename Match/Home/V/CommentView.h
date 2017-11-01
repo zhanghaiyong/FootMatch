@@ -12,4 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *tapToCommentBtn;
 @property (nonatomic,copy)void (^shareNewsBack)(void);
 @property (nonatomic,copy)void (^commentBack)(void);
+@property (nonatomic,copy)void (^CollectBack)(void);
+@property (weak, nonatomic) IBOutlet UIButton *collectBtn;
 @end

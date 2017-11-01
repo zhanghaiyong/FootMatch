@@ -80,6 +80,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="collectBtn" destination="f26-rC-Lfg" id="Rxa-TS-Gzd"/>
                 <outlet property="tapToCommentBtn" destination="m0k-B3-Pqx" id="aZo-Et-0Kx"/>
             </connections>
             <point key="canvasLocation" x="-231" y="128"/>

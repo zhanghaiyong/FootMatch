@@ -93,6 +93,41 @@
     __weak HotDetailViewController *weakSelf = self;
     self.commentView = [[[NSBundle mainBundle] loadNibNamed:@"CommentView" owner:self options:nil] lastObject];
     self.commentView.frame = CGRectMake(0, KDeviceHeight-kHomeBarHeight-40, kDeviceWidth, 40);
+    
+    NSMutableArray *collects = [NSMutableArray arrayWithArray:weakSelf.account.collects];
+    if (collects.count > 0) {
+        for (NSDictionary *dic in collects) {
+            
+            if ([dic[@"newsId"] isEqualToString:self.newsId]) {
+                self.commentView.collectBtn.selected = YES;
+                break;
+            }else {
+                self.commentView.collectBtn.selected = NO;
+            }
+        }
+    }else {
+        self.commentView.collectBtn.selected = NO;
+    }
+    
+    self.commentView.CollectBack = ^{
+        
+        //有帐号
+        if ([weakSelf.account.status isEqualToString:@"YES"]) {
+            
+            if (!weakSelf.commentView.collectBtn.selected) {
+                weakSelf.commentView.collectBtn.selected = YES;
+                [SVProgressHUD showSuccessWithStatus:@"积分 +10"];
+                
+                
+                [collects addObject:@{@"newsId":weakSelf.newsId,@"newsTitle":weakSelf.newsTitle}];
+                weakSelf.account.collects = collects;
+                [AccountModel saveAccount:weakSelf.account];
+            }
+        }else {
+            [SVProgressHUD showInfoWithStatus:@"登录后可收藏"];
+        }
+    };
+    
     self.commentView.shareNewsBack = ^{ //分享
         
         UIActivityViewController *activity = [[UIActivityViewController alloc] initWithActivityItems:@[weakSelf.newsTitle, htmlDict[@"content"]] applicationActivities:nil];
@@ -141,7 +176,7 @@
         [tableView reloadData];
         [weakSelf.writeView.contentTV resignFirstResponder];
         
-        [SVProgressHUD showSuccessWithStatus:@"评论成功"];
+        [SVProgressHUD showSuccessWithStatus:@"积分 +20"];
         
     };
     [self.view addSubview:self.writeView];
