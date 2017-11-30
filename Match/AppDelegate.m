@@ -28,7 +28,7 @@ void uncaughtExceptionHandler(NSException *exception) {
     
     
     //leanCloud
-    [AVOSCloud setApplicationId:@"WM10Al07f4FtfQEW2mYIl7lv-gzGzoHsz" clientKey:@"JSGQobGfzv2pkeQAGGPxzSI0"];
+    [AVOSCloud setApplicationId:@"DBeVnttParPQ1kcUrFyKSvEJ-gzGzoHsz" clientKey:@"9feor3B4OfaqkV2sEDUAMC3l"];
     
     IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
     manager.enable = YES;

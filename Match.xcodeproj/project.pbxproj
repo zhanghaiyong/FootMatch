@@ -796,7 +796,7 @@
 				TargetAttributes = {
 					99E9D8E21F7F747500D1A781 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1138,16 +1138,16 @@
 				CODE_SIGN_ENTITLEMENTS = Match/Match.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DRK5523CS;
+				GCC_PREFIX_HEADER = /Users/edianzu/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.sunshine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haiyong.focusPE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8dae07ff-d69c-446f-8ae6-330914c3aba7";
-				PROVISIONING_PROFILE_SPECIFIER = dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1160,17 +1160,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Match/Match.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4XH337X4G3;
-				GCC_PREFIX_HEADER = /Users/yangqian/Desktop/PE/FootMatch/Match/FootMatch.pch;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DRK5523CS;
+				GCC_PREFIX_HEADER = /Users/edianzu/Desktop/PE/FootMatch/Match/FootMatch.pch;
 				INFOPLIST_FILE = Match/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhang.sunshine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haiyong.focusPE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4b24181c-cb28-4006-8b1e-5f40891379a3";
-				PROVISIONING_PROFILE_SPECIFIER = dis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -19,6 +19,17 @@
     [super viewDidLoad];
         
     
+//                AVObject *obj = [AVObject objectWithClassName:@"oneClass"];
+//                [obj setObject:@"YES" forKey:@"show"];
+//                [obj setObject:@"http:www.baidu.com" forKey:@"url"];
+//
+//                if ([obj save]) {
+//                    NSLog(@"存储成功");
+//                }else {
+//
+//                    NSLog(@"失败的话");
+//                }
+    
     [SVProgressHUD showWithStatus:@"加载中..."];
     self.view.backgroundColor = [UIColor whiteColor];
 
